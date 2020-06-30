@@ -1,6 +1,6 @@
 # Kunstwerk
 
-# Naam
+## Naam
 Kunstwerk
 
 ## ID
