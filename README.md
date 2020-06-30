@@ -1,7 +1,9 @@
 # DisGeo begrippenkader
 Dit is de repository voor het ontwikkelen van het DisGeo begrippenkader. 
 
-De werkversie van het begrippenkader is hier in documentvorm te bekijken: http://geonovum.github.io/disgeo-begrippen
+De werkversie van het begrippenkader is hier in documentvorm te bekijken: 
+
+http://geonovum.github.io/disgeo-begrippen
 
 Zie ook 
 - [Doorontwikkeling in samenhang](https://www.geobasisregistraties.nl/basisregistraties/doorontwikkeling-in-samenhang) (DisGeo)
