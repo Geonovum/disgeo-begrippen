@@ -27,10 +27,10 @@
 ## verwant concept
 *begrippen die te maken hebben met dit begrip*
 
-## Goedgekeurd
-*aanduiding of het begrip wel of niet wordt opgenomen in het begrippenkader*
+## Herkomst
+*aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*
 
-*Begrippen die uiteindelijk niet worden opgenomen, worden hier toch gedocumenteerd zodat de argumentatie hiervoor later kan worden teruggevonden.*
+*Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
 
-## Reden
-*argumentatie voor het al dan niet opnemen van het begrip in het begrippenkader*
+## Afbeelding
+*beeldende toelichtingen (in de vorm van afbeeldingen*
