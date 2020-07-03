@@ -22,7 +22,7 @@ Kunstwerken
 *ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
 
 ## verwant concept
-Hetzelfde als NEN3610:Kunstwerk
+*begrippen die te maken hebben met dit begrip*
 
 ## Herkomst
 *aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*

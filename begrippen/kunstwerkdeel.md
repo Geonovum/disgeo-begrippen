@@ -22,12 +22,10 @@ Kunstwerken
 *ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
 
 ## verwant concept
-Hetzelfde als NEN3610:Kunstwerk
+http://definities.geostandaarden.nl/imgeo/id/begrip/Kunstwerkdeel
 
 ## Herkomst
-*aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*
-
-*Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
+http://definities.geostandaarden.nl/id/begrippenkader/imgeo
 
 ## Afbeelding
 *beeldende toelichtingen (in de vorm van afbeeldingen)*

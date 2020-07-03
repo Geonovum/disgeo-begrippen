@@ -25,12 +25,10 @@ Kunstwerkdeel
 *ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
 
 ## verwant concept
-Hetzelfde als NEN3610:Kunstwerk
+http://definities.geostandaarden.nl/nen3610/id/begrip/Kunstwerk
 
 ## Herkomst
-*aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*
-
-*Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
+https://definities.geostandaarden.nl/id/begrippenkader/nen3610
 
 ## Afbeelding
 *beeldende toelichtingen (in de vorm van afbeeldingen)*
