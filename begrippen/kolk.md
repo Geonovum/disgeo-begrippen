@@ -30,4 +30,4 @@ Kunstwerken
 *Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
 
 ## Afbeelding
-*beeldende toelichtingen (in de vorm van afbeeldingen*
+*beeldende toelichtingen (in de vorm van afbeeldingen)*
