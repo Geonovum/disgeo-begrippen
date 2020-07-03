@@ -7,7 +7,9 @@ Steiger
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Vaste (niet drijvende) waterbouwkundige constructie, verbonden met de wal, voor het aanleggen van schepen en bedoeld om deze schepen vanaf de wal te laden en te lossen.
+
+<aside class="issue">vraag aan gebruikers: is het relevant om de palen van de steiger apart (als "steigerpalen" objecten) op te nemen? Issues: steiger aan meerpalen, steiger waar je onderdoor kan varen.</aside>
 
 ## Breder concept
 Kunstwerk

@@ -7,7 +7,7 @@ Duiker
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Kunstwerk voor de waterhuishouding, bestaande uit een gesloten kokervormige constructie met een in- en uitstroomopening, die niet de gehele waterbreedte beslaat, aangebracht onder een weg of spoorweg of in een dam of ander terreindeel en de bodem van de waterloop onderbreekt.
 
 ## Breder concept
 Ondertunneling

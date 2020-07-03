@@ -7,7 +7,7 @@ Stuw
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Een vaste of beweegbare constructie in het water die dient om de waterstand bovenstrooms en/of benedenstrooms van de constructie te regelen.
 
 ## Breder concept
 Kunstwerk
@@ -19,7 +19,7 @@ Kunstwerken
 *synoniemen, namen in andere talen*
 
 ## Toelichting en voorbeelden
-*ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
+Zowel objecttype stuw complex (functioneel) als stuw (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld.
 
 ## verwant concept
 http://definities.geostandaarden.nl/imgeo/id/begrip/Stuw
