@@ -7,10 +7,10 @@ Aquaduct
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Overbruggingsconstructie waarmee een watergang door een bakvormige constructie over een weg, een spoorweg, een andere watergang, een leiding of een terrein wordt geleid.
 
 ## Breder concept
-Overbrugging
+Overbruggingsconstructie
 
 ## Groep / collectie
 Kunstwerken
@@ -25,9 +25,7 @@ Kunstwerken
 http://definities.geostandaarden.nl/imgeo/id/begrip/Aquaduct
 
 ## Herkomst
-*aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*
-
-*Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
+http://definities.geostandaarden.nl/id/begrippenkader/imgeo
 
 ## Afbeelding
 *beeldende toelichtingen (in de vorm van afbeeldingen)*

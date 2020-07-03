@@ -1,13 +1,13 @@
 # Overbrugging
 
 ## Naam
-Overbrugging
+Overbruggingsconstructie
 
 ## ID
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Een beweegbare of vaste verbinding tussen twee punten, die door water, een weg of anderszins  gescheiden zijn,  bestaande uit een brugdek/-bak met landhoofden en veelal gesteund door pijlers.
 
 ## Breder concept
 Kunstwerk
@@ -25,12 +25,10 @@ Brugdeel (dek, pijler, landhoofd, sloof, pyloon)
 *ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
 
 ## verwant concept
-*begrippen die te maken hebben met dit begrip*
+http://definities.geostandaarden.nl/imgeo/id/begrip/Overbruggingsdeel
 
 ## Herkomst
-*aanduiding van de standaard, vocabulaire, etc waar het begrip uit is overgenomen, bv de BGT of Aquo.*
-
-*Indien mogelijk wordt hier de URL van het bronbegrip opgenomen.*
+https//definities.geostandaarden.nl/id/begrippenkader/imgeo
 
 ## Afbeelding
 *beeldende toelichtingen (in de vorm van afbeeldingen)*

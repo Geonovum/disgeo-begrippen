@@ -7,7 +7,7 @@ Strekdam
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de oevers of brugpijlers of ter beheersing van de rivier.
 
 ## Breder concept
 Kunstwerk
@@ -16,10 +16,10 @@ Kunstwerk
 Kunstwerken
 
 ## Alternatieve naam
-*synoniemen, namen in andere talen*
+pier, golfbreker
 
 ## Toelichting en voorbeelden
-*ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
+Totale constructie, met palen en verharding. Kan bij zee en rivier voorkomen.
 
 ## verwant concept
 http://definities.geostandaarden.nl/imgeo/id/begrip/Strekdam

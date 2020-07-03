@@ -7,10 +7,10 @@ Ecoduct
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Overbruggingsconstructie over een weg of spoorweg,  bedoeld voor het passeren van dieren.
 
 ## Breder concept
-Overbrugging
+Overbruggingsconstructie
 
 ## Groep / collectie
 Kunstwerken

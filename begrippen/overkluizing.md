@@ -7,10 +7,10 @@ Overkluizing
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Een civieltechnisch kunstwerk waarmee een weg, een plein of een waterloop (kruiselings) wordt overwelfd, waarbij het dek meestal niet uitsluitend uit een pad of weg bestaat.
 
 ## Breder concept
-Overbrugging
+Overbruggingsconstructie
 
 ## Groep / collectie
 Kunstwerken

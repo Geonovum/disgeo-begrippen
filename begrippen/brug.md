@@ -7,10 +7,10 @@ Brug
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Overbruggingsconstructie over een watervlakte of waterloop, bedoeld voor verkeer.
 
 ## Breder concept
-Overbrugging
+Overbruggingsconstructie
 
 ## Groep / collectie
 Kunstwerken
@@ -19,7 +19,7 @@ Kunstwerken
 *synoniemen, namen in andere talen*
 
 ## Toelichting en voorbeelden
-*ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
+T.o.v. het supertype gaat het hier alleen om het extra aspect dat het over water gaat.
 
 ## verwant concept
 http://definities.geostandaarden.nl/imgeo/id/begrip/Brug

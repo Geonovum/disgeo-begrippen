@@ -7,10 +7,10 @@ Viaduct
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Overbruggingsconstructie over een weg, spoorweg of terreinverdieping, bedoeld voor verkeer.
 
 ## Breder concept
-Overbrugging
+Overbruggingsconstructie
 
 ## Groep / collectie
 Kunstwerken
@@ -19,7 +19,7 @@ Kunstwerken
 *synoniemen, namen in andere talen*
 
 ## Toelichting en voorbeelden
-*ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
+T.o.v. het supertype gaat het hier alleen om het extra aspect dat het over terrein etc. gaat.
 
 ## verwant concept
 http://definities.geostandaarden.nl/imgeo/id/begrip/Viaduct

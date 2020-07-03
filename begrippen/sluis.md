@@ -7,7 +7,7 @@ Sluis
 *stabiele identifier van het begrip*
 
 ## Definitie
-*heldere definitie van de betekenis* 
+Een kunstmatige, afsluitbare waterkering die een scheepvaartverbinding tussen twee wateren met verschillende waterpeilen mogelijk maakt.
 
 ## Breder concept
 Kunstwerk
@@ -22,7 +22,7 @@ Sluisdeel (Sluisdeur, Kolk)
 *synoniemen, namen in andere talen*
 
 ## Toelichting en voorbeelden
-*ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
+Zowel objecttype sluis complex (functioneel) als sluis (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld.
 
 ## verwant concept
 http://definities.geostandaarden.nl/imgeo/id/begrip/Sluis
