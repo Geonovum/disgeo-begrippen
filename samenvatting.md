@@ -1,7 +1,7 @@
 # DiSGeo begrippenkader
 Dit document beschrijft alle begrippen uit het DisGeo begrippenkader, op basis van de analyse van de werkgroep inhoud en subgroepen daarvan. De begrippen rondom het thema Water / Kunstwerken zijn als eerste uitgewerkt. De rest volgt later. 
 
-<aside class='issue'>Is dit het begrippenkader van "Doorontwikkeling in Samenhang" (DisGeo) of het begrippenkader van de "Samenhangende objectregistratie" (SOR)? 
+<aside class='issue'>Is dit het begrippenkader van "Doorontwikkeling in Samenhang" (DisGeo) of het begrippenkader van de "Samenhangende objectregistratie" (SOR)? </aside>
 
 ## Opnamecriteria
 De werkgroep DisGeo Inhoud bepaalt aan de hand van een set criteria welke gegevens moeten worden opgenomen. Indirect bepaalt dit dus ook welke *begrippen* in het begrippenkader moeten komen. Namelijk die begrippen, die nodig zijn om de gegevens semantisch te kunnen beschrijven. 
