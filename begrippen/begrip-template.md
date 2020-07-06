@@ -1,4 +1,4 @@
-# Template
+# Template voor de beschrijving van begrippen
 
 ## Naam
 *een duidelijke naam voor het begrip*
