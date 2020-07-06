@@ -17,4 +17,4 @@ In het begrippenkader wordt een unieke, persistente identifier aan het begrip to
 
 Optioneel worden nog andere gegevens van het begrip vastgelegd. Hieronder de volledige template: 
 
-<section data-format="markdown" data-include="begrip-template.md"></section>
+<section data-format="markdown" data-include="begrippen/begrip-template.md"></section>
