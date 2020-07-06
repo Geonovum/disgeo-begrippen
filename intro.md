@@ -43,7 +43,7 @@ Optioneel worden nog andere gegevens van het begrip vastgelegd. Hieronder de vol
 ### Toelichting en voorbeelden
 *ondersteunende tekst, bronverwijzingen, en voorbeelden die het begrip duidelijker maken*
 
-## verwant concept
+### verwant concept
 *begrippen die te maken hebben met dit begrip*
 
 ### Herkomst
