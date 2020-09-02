@@ -526,7 +526,7 @@ sor_begrip:Kunstwerk rdf:type skos:Concept;
 sor_begrip:Waterdeel rdf:type skos:Concept;
       rdfs:label "Waterdeel"@nl;
       skos:prefLabel "Waterdeel"@nl;
-      skos:definition "Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en of leidingen en niet bedoeld voor permanent menselijk verblijf. "@nl;
+      skos:definition "Grondoppervlak permanent of periodiek bedekt met water. "@nl;
       skos:broader sor_begrip:FysiekObject ;
       skos_thes:broaderGeneric sor_begrip:FysiekObject ;
       skos:inScheme begrippenkaders:sor;
