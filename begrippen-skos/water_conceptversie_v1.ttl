@@ -30,7 +30,11 @@ sor_begrip:Bodemval rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bodemval> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+	    dcterms:description "Voorlopige definitie (wordt mogelijk aangepast)"@nl;
+      ] .
 
 sor_begrip:Brug rdf:type skos:Concept;
       rdfs:label "Brug"@nl;
@@ -52,7 +56,11 @@ sor_begrip:Coupure rdf:type skos:Concept;
       skos:inScheme begrippenkaders:sor;
       skos:scopeNote "Zowel objecttype coupure complex (functioneel) als coupure (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld."@nl ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Coupure> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+	    dcterms:description "Voorlopige definitie (wordt mogelijk aangepast)"@nl;
+      ] .
 
 sor_begrip:Coupurecomplex rdf:type skos:Concept;
       rdfs:label "Coupure complex"@nl;
@@ -80,8 +88,8 @@ sor_begrip:Duiker rdf:type skos:Concept;
       skos:broader sor_begrip:Ondertunneling;
       skos_thes:broaderGeneric sor_begrip:Ondertunneling;
       skos:inScheme begrippenkaders:sor;
-      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Duiker> ;
-      dcterms:source begrippenkaders:imgeo . 
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Duiker>,  <https://www.aquolex.nl/items/skos?id=24666>;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> .
 
 sor_begrip:Ecoduct rdf:type skos:Concept;
       rdfs:label "Ecoduct"@nl;
@@ -90,8 +98,8 @@ sor_begrip:Ecoduct rdf:type skos:Concept;
       skos:broader sor_begrip:Overbrugging;
       skos_thes:broaderGeneric sor_begrip:Overbrugging;
       skos:inScheme begrippenkaders:sor;
-      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ecoduct> ;
-      dcterms:source begrippenkaders:imgeo . 
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ecoduct>, <https://www.aquolex.nl/items/skos?id=24721> ;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> . 
 
 sor_begrip:FlyOver rdf:type skos:Concept;
       rdfs:label "Fly-over"@nl;
@@ -101,7 +109,11 @@ sor_begrip:FlyOver rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Overbrugging;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Fly-over> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+	    dcterms:description "Voorlopige definitie (wordt mogelijk aangepast)"@nl;
+      ] .
 
 sor_begrip:Gemaal rdf:type skos:Concept;
       rdfs:label "Gemaal"@nl;
@@ -125,10 +137,36 @@ sor_begrip:Gemaalcomplex rdf:type skos:Concept;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Gemaal> ;
       dcterms:source begrippenkaders:imgeo . 
 
+sor_begrip:Constructie rdf:type skos:Concept;
+      rdfs:label "Constructie"@nl;
+      skos:prefLabel "Constructie"@nl;
+      skos:definition "Bestaat uit de verschillende bouwwerken (niet gebouw zijnde)."@nl;
+      skos:broader sor_begrip:FysiekObject;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/doc/begrip/OverigBouwwerk> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+	    dcterms:description "Geen expliciete definitie gevonden"@nl;
+      ] .
+
+sor_begrip:Deksel rdf:type skos:Concept;
+      rdfs:label "Deksel"@nl;
+      skos:prefLabel "Deksel"@nl;
+      skos:definition "Het afsluitende deel van een gegraven, koker of lijnvormige constructie waarin zich (vloei)stoffen kunnen bevinden."@nl;
+      skos:broader sor_begrip:Constructie;
+      skos_thes:broaderGeneric sor_begrip:Constructie;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Put> ;
+      dcterms:source begrippenkaders:imgeo . 
+
 sor_begrip:Kolk rdf:type skos:Concept;
       rdfs:label "Kolk"@nl;
       skos:prefLabel "Kolk"@nl;
       skos:definition "Op het riool aangesloten voorziening voor de opvang van hemel- en afvalwater afkomstig van erop aangesloten oppervlakken."@nl;
+      skos:broader sor_begrip:Deksel;
+      skos_thes:broaderGeneric sor_begrip:Deksel;      
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kolk> ;
       dcterms:source begrippenkaders:imgeo . 
