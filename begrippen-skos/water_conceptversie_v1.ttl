@@ -7,6 +7,7 @@
 @prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
 @prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
 @prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
 
 begrippenkaders:sor a skos:ConceptScheme;
 	rdfs:label "Begrippenkader van de Samenhangende Objectenregistratie (SOR)".
@@ -445,7 +446,10 @@ sor_begrip:Watervlakte rdf:type skos:Concept;
       skos_thes:broaderGeneric  sor_begrip:Waterdeel;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Watervlakte> ;
-      dcterms:source begrippenkaders:imgeo .  
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 2 ;
+      ] .
 
 sor_begrip:Meer rdf:type skos:Concept;
       rdfs:label "Meer"@nl;
@@ -531,6 +535,7 @@ sor_begrip:Waterdeel rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:FysiekObject ;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch nen3610_begrip:Water ;
-      dcterms:source begrippenkaders:nen3610 .
-
-
+      dcterms:source begrippenkaders:nen3610 ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .
