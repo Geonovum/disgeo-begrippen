@@ -1,0 +1,154 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos_thes: <http://purl.org/iso25964/skos_thes>. 
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix sor_collectie: <http://brt.basisregistraties.overheid.nl/top10nl/id/collectie/>.
+@prefix sor_begrip: <http://definities.geostandaarden.nl/imsor/id/begrip/>.
+@prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
+@prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
+@prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
+
+begrippenkaders:sor a skos:ConceptScheme;
+      rdfs:label "Begrippenkader van de Samenhangende Objectenregistratie (SOR)".
+
+# COLLECTIES      
+
+ sor_collectie:WaterDomein a skos:Collection ;
+      rdfs:label "Begrippen gerelateerd aan het domein Water" ;
+      skos:prefLabel "Begrippen uit het Water domein" .
+
+ sor_collectie:NatuurDomein a skos:Collection ;
+      rdfs:label "Begrippen gerelateerd aan het domein Natuur en Landschap" ;
+      skos:prefLabel "Begrippen uit het Natuur en Landschap domein" .                
+
+ sor_collectie:BouwwerkDomein a skos:Collection ;
+      rdfs:label "Begrippen gerelateerd aan het domein Bouwwerken" ;
+      skos:prefLabel "Begrippen uit het Bouwerken domein" . 
+
+ sor_collectie:WegenDomein a skos:Collection ;
+      rdfs:label "Begrippen gerelateerd aan het domein Wegen" ;
+      skos:prefLabel "Begrippen uit het Wegen domein" . 
+
+
+# BASIS BEGRIPPEN
+
+sor_begrip:Begroeiing rdf:type skos:Concept;
+      rdfs:label "Begroeiing"@nl;
+      skos:prefLabel "Begroeiing"@nl;
+      skos:definition "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant."@nl;
+      skos:broader sor_begrip:FysiekObject;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:Begroeiing ;
+      dcterms:source begrippenkaders:nen3610 ;
+            edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Bodem rdf:type skos:Concept;
+      rdfs:label "Bodem"@nl;
+      skos:prefLabel "Bodem"@nl;
+      skos:definition "Bovenste deel van het natuurlijke aardoppervlak."@nl;
+      skos:broader sor_begrip:FysiekObject;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:Bodem ;
+      dcterms:source begrippenkaders:nen3610 .
+
+sor_begrip:Constructie rdf:type skos:Concept;
+      rdfs:label "Constructie"@nl;
+      skos:prefLabel "Constructie"@nl;
+      skos:definition "Gebouwd object dat direct of indirect met de grond is verbonden en bedoeld is om ter plaatse te functioneren."@nl;
+      skos:broader sor_begrip:FysiekObject;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:Constructie ;
+      dcterms:source begrippenkaders:nen3610 ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:SorObject rdf:type skos:Concept;
+      rdfs:label "SOR object"@nl;
+      skos:prefLabel "SOR object"@nl;
+      skos:definition "?"@nl;
+      skos:inScheme begrippenkaders:sor.
+
+sor_begrip:FysiekObject rdf:type skos:Concept;
+      rdfs:label "Fysiek object"@nl;
+      skos:prefLabel "Fysiek object"@nl;
+      skos:definition "Geo-object waarvan het fenomeen in de werkelijkheid tastbaar, zichtbaar en begrensd aanwezig is."@nl;
+      skos:broader sor_begrip:SorObject ;
+      skos_thes:broaderGeneric sor_begrip:SorObject ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:ReeelObject ;
+      dcterms:source begrippenkaders:nen3610 .
+
+sor_begrip:FunctioneelObject rdf:type skos:Concept;
+      rdfs:label "Functioneel object"@nl;
+      skos:prefLabel "Functioneel object"@nl;
+      skos:definition "Virtuele objecten waarvan de begrenzing altijd wordt bepaald door een functionele eenheid. gezamelijk vastgesteld door partijen"@nl;
+      skos:broader sor_begrip:SorObject ;
+      skos_thes:broaderGeneric sor_begrip:SorObject ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:FunctioneelObject ;
+      dcterms:source begrippenkaders:nen3610 .
+
+sor_begrip:Gebouw rdf:type skos:Concept;
+      rdfs:label "Gebouw";
+      skos:prefLabel "Gebouw";
+      skos:definition " Overdekte en geheel of gedeeltelijk met wanden omsloten constructief zelfstandige eenheid bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen.";
+      skos:broader sor_begrip:Constructie;
+      skos_thes:broaderGeneric sor_begrip:Constructie;
+      skos:inScheme begrippenkaders:sor ;
+      skos:scopeNote " volgt later " ;
+      dcterms:source "Gebaseerd op definitie “pand” in artikel 1 Wet basisregistratie adressen en gebouwen en de INSPIRE richtlijn"@nl .
+
+sor_begrip:Kunstwerk rdf:type skos:Concept;
+      rdfs:label "Kunstwerk"@nl;
+      skos:prefLabel "Kunstwerk"@nl;
+      skos:definition "Een beweegbare of vaste verbinding tussen twee punten, die door water, een weg of anderszins gescheiden zijn, bestaande uit een brugdek/-bak met landhoofden en veelal gesteund door pijlers."@nl;
+      skos:broader sor_begrip:Constructie ;
+      skos_thes:broaderGeneric sor_begrip:Constructie ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:Kunstwerk ;
+      dcterms:source begrippenkaders:nen3610 .
+
+sor_begrip:OnbepaaldTerreindeel rdf:type skos:Concept;
+      rdfs:label "Onbepaald Terreindeel" ;
+      skos:prefLabel "Onbepaald Terreindeel" ;
+      skos:definition "Fysiek begrensd en zichtbaar terreindeel dat bij een gebouw hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding en/of water." ;
+      skos:broader sor_begrip:FysiekObject ;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject ;
+      skos:inScheme begrippenkaders:sor ;
+      skos:scopeNote "Fysiek begrensd en zichtbaar terreindeel dat bij een gebouw hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding en/of water."@nl ;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/doc/begrip/Erf> ;
+      dcterms:source begrippenkaders:imgeo .      
+
+sor_begrip:Verharding rdf:type skos:Concept;
+      rdfs:label "Verharding";
+      skos:prefLabel "Verharding";
+      skos:definition "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in één of meer lagen over een ondergrond of onderliggende constructie aangelegd materiaal.";
+      skos:broader sor_begrip:Constructie;
+      skos_thes:broaderGeneric sor_begrip:Constructie;
+      skos:inScheme begrippenkaders:sor ;
+      skos:scopeNote "Een verhardingsvlak bestaat uit één Type verharding. Het gaat hierbij over het Type verharding waarmee het vlak overwegend is bedekt. Voor minimale stukjes, 5m2, met andere verharding hoeft geen apart vlak te worden gevormd."@nl ;
+      skos:relatedMatch nen3610_begrip:Verharding ;
+      dcterms:source begrippenkaders:nen3610 .
+
+sor_begrip:WaterObject rdf:type skos:Concept;
+      rdfs:label "Water object"@nl;
+      skos:prefLabel "Water object"@nl;
+      skos:definition "Grondoppervlak permanent of periodiek bedekt met water. "@nl;
+      skos:broader sor_begrip:FysiekObject ;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch nen3610_begrip:Water ;
+      dcterms:source begrippenkaders:nen3610 ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .
+
+

@@ -1,0 +1,270 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos_thes: <http://purl.org/iso25964/skos_thes>. 
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix sor_collectie: <http://brt.basisregistraties.overheid.nl/top10nl/id/collectie/>.
+@prefix sor_begrip: <http://definities.geostandaarden.nl/imsor/id/begrip/>.
+@prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
+@prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
+@prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
+
+sor_begrip:Loofbos rdf:type skos:Concept;
+            rdfs:label "Loofbos"@nl;
+            skos:prefLabel "Loofbos"@nl;
+            skos:definition "Terreindeel begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Loofbos>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+
+sor_begrip:GriendEnHakhout rdf:type skos:Concept;
+            rdfs:label "Griend en hakhout"@nl;
+            skos:prefLabel "Griend en hakhout"@nl;
+            skos:definition "Terreindeel met opgaande begroeiing van loofbomen, in een dicht groeiverband, en die periodiek wordt ingekort."@nl;
+            skos:broader sor_begrip:Loofbos;
+            skos_thes:broaderGeneric sor_begrip:Loofbos;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/GriendEnHakhout>;
+            dcterms:source begrippenkaders:imgeo ;
+            .
+
+sor_begrip:GemengdBos rdf:type skos:Concept;
+            rdfs:label "Gemengd bos"@nl;
+            skos:prefLabel "Gemengd bos"@nl;
+            skos:definition "Terreindeel begroeid met een dusdanig aantal naald- en loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/GemengdBos>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Naaldbos rdf:type skos:Concept;
+            rdfs:label "Naaldbos"@nl;
+            skos:prefLabel "Naaldbos"@nl;
+            skos:definition "Terreindeel begroeid met een dusdanige aantal naaldbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen. "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Naaldbos>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:GrasEnKruidachtigen rdf:type skos:Concept;
+            rdfs:label "Gras- en kruidachtigen"@nl;
+            skos:prefLabel "Gras- en kruidachtigen"@nl;
+            skos:definition "(Grond met) een laagblijvende, aaneengesloten gras- en/of kruidachtige vegetatie."@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            dcterms:source "CROW" ;
+            . 
+sor_begrip:Struiken rdf:type skos:Concept;
+            rdfs:label "Struiken"@nl;
+            skos:prefLabel "Struiken"@nl;
+            skos:definition "Terreindeel bedekt met lage, houtachtige, overblijvende planten gekenmerkt door verschillende vertakkingen dicht bij de wortel en eventueel aanwezigheid van enkele verspreid staande stammen.   "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Struiken>;
+            dcterms:source begrippenkaders:imgeo ;
+            .
+
+sor_begrip:Heesters rdf:type skos:Concept;
+            rdfs:label "Heesters"@nl;
+            skos:prefLabel "Heesters"@nl;
+            skos:definition "Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een  gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit één soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak.  "@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor;
+            . 
+
+sor_begrip:Bosplantsoen rdf:type skos:Concept;
+            rdfs:label "Bosplantsoen"@nl;
+            skos:prefLabel "Bosplantsoen"@nl;
+            skos:definition "Opgaande beplanting van houtachtige gewassen die struikvormend en/of boomvormend zijn. De soorten zijn als bosplantsoen opgekweekt en aangeplant.De beplanting kan open of  gesloten zijn en bestaat vaak uit inheemse soorten. Onderscheidt zich van heesters omdat de sierkenmerken niet voorop staan.   "@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+            dcterms:source "CROW";
+            . 
+
+sor_begrip:Planten rdf:type skos:Concept;
+            rdfs:label "Planten"@nl;
+            skos:prefLabel "Planten"@nl;
+            skos:definition " "@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+		    edit:issue [
+		            dcterms:identifier 4 ;
+		    ] .
+
+sor_begrip:Struikrozen rdf:type skos:Concept;
+            rdfs:label "Struikrozen"@nl;
+            skos:prefLabel "Struikrozen"@nl;
+            skos:definition " "@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+		    edit:issue [
+		            dcterms:identifier 4 ;
+		    ] . 
+
+sor_begrip:Bodembedekkers rdf:type skos:Concept;
+            rdfs:label "Bodembedekkers"@nl;
+            skos:prefLabel "Bodembedekkers"@nl;
+            skos:definition " "@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+		    edit:issue [
+		            dcterms:identifier 4 ;
+		    ] .
+
+sor_begrip:Haag rdf:type skos:Concept;
+            rdfs:label "Haag"@nl;
+            skos:prefLabel "Haag"@nl;
+            skos:definition "Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken."@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Haag>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Bomenrij rdf:type skos:Concept;
+            rdfs:label "Bomenrij"@nl;
+            skos:prefLabel "Bomenrij"@nl;
+            skos:definition "opgaande begroeiing van bomen zonder struiken  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Boom rdf:type skos:Concept;
+            rdfs:label "Boom"@nl;
+            skos:prefLabel "Boom"@nl;
+            skos:definition " Een markante boom die geen onderdeel uitmaakt van een ander boom- of struikbeplanting. "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Boom>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Boomspiegel rdf:type skos:Concept;
+            rdfs:label "Boomspiegel"@nl;
+            skos:prefLabel "Boomspiegel"@nl;
+            skos:definition " Het stuk grond rondom de stam van een boom dat van boven toegankelijk is voor lucht en water. "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Boomspiegel>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Houtsingel rdf:type skos:Concept;
+            rdfs:label "Houtsingel"@nl;
+            skos:prefLabel "Houtsingel"@nl;
+            skos:definition "opgaande begroeiing van  bomen (enkelvoudige/meervoudige stammen) en struiken  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Moeras rdf:type skos:Concept;
+            rdfs:label "Moeras"@nl;
+            skos:prefLabel "Moeras"@nl;
+            skos:definition "Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing.  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Moeras>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Heide rdf:type skos:Concept;
+            rdfs:label "Heide"@nl;
+            skos:prefLabel "Heide"@nl;
+            skos:definition "Terreindeel overwegend begroeid met heide en heideachtige vegetaties.  "@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Heide>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Rietland rdf:type skos:Concept;
+            rdfs:label "Rietland"@nl;
+            skos:prefLabel "Rietland"@nl;
+            skos:definition "Terreindeel overwegend begroeid met rietvegetatie."@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Rietland>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Bouwland rdf:type skos:Concept;
+            rdfs:label "Bouwland"@nl;
+            skos:prefLabel "Bouwland"@nl;
+            skos:definition "Terreindeel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen."@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Bouwland>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:FruitBomenteelt rdf:type skos:Concept;
+            rdfs:label "Fruit- bomenteelt"@nl;
+            skos:prefLabel "Fruit- bomenteelt"@nl;
+            skos:definition "Terreindeel begroeid met fruitbomen in de vorm van hoogstam en laagstamboomgaard, druiven of kleinfruit. en Grond in gebruik voor het kweken van jonge siergewassen, bomen enz. ten behoeve van een later gebruik elders."@nl;
+            skos:broader sor_begrip:Begroeiing;
+            skos_thes:broaderGeneric sor_begrip:Begroeiing;
+            skos:inScheme begrippenkaders:sor ;
+            dcterms:source "CROW" ;
+            .
+
+sor_begrip:LaagstamBoomgaarden rdf:type skos:Concept;
+            rdfs:label "Laagstam boomgaarden"@nl;
+            skos:prefLabel "Laagstam boomgaarden"@nl;
+            skos:definition "Terreindeel begroeid met laagstamfruitbomen."@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/LaagstamBoomgaarden>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:HoogstamBoomgaarden rdf:type skos:Concept;
+            rdfs:label "Hoogstam boomgaarden"@nl;
+            skos:prefLabel "Hoogstam boomgaarden"@nl;
+            skos:definition "Terreindeel begroeid met hoogstamfruitbomen."@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/HoogstamBoomgaarden>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Wijngaarden rdf:type skos:Concept;
+            rdfs:label "Wijngaarden"@nl;
+            skos:prefLabel "Wijngaarden"@nl;
+            skos:definition "Terreindeel begroeid met druivenstokken voor wijnbouw."@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Wijngaarden>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:KleinFruit rdf:type skos:Concept;
+            rdfs:label "Klein fruit"@nl;
+            skos:prefLabel "Klein fruit"@nl;
+            skos:definition "Terreindeel begroeid met heesters voor zachtfruit zoals bessen of frambozen."@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/KleinFruit>;
+            dcterms:source begrippenkaders:imgeo ;
+            . 
+sor_begrip:Boomkwekerij rdf:type skos:Concept;
+            rdfs:label "Boomkwekerij"@nl;
+            skos:prefLabel "Boomkwekerij"@nl;
+            skos:definition "Terrein, overwegend in gebruik t.b.v. het opkweken van bomen (inclusief coniferen en sparren) en struiken, waarbij de hoogte van de aanplant niet van belang is."@nl;
+            skos:broader sor_begrip:Struiken;
+            skos_thes:broaderGeneric sor_begrip:Struiken;
+            skos:inScheme begrippenkaders:sor;
+            . 

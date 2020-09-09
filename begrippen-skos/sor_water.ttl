@@ -1,0 +1,185 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos_thes: <http://purl.org/iso25964/skos_thes>. 
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix sor_collectie: <http://brt.basisregistraties.overheid.nl/top10nl/id/collectie/>.
+@prefix sor_begrip: <http://definities.geostandaarden.nl/imsor/id/begrip/>.
+@prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
+@prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
+@prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
+
+sor_begrip:Watervlakte rdf:type skos:Concept;
+      rdfs:label "Watervlakte"@nl;
+      skos:prefLabel "Watervlakte"@nl;
+      skos:definition "Een verlaging in het aardoppervlak van natuurlijke of kunstmatige oorsprong, die permanent of periodiek water bevat."@nl;
+      skos:broader sor_begrip:WaterObject;
+      skos_thes:broaderGeneric  sor_begrip:WaterObject;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Watervlakte> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 2 ;
+      ] .
+
+sor_begrip:Meer rdf:type skos:Concept;
+      rdfs:label "Meer"@nl;
+      skos:prefLabel "Meer"@nl;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Meer> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Plas rdf:type skos:Concept;
+      rdfs:label "Plas"@nl;
+      skos:prefLabel "Plas"@nl;
+      skos:definition "?"@nl;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Plas> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Ven rdf:type skos:Concept;
+      rdfs:label "Ven"@nl;
+      skos:prefLabel "Ven"@nl;
+      skos:definition "?"@nl;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ven> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Vijver rdf:type skos:Concept;
+      rdfs:label "Vijver"@nl;
+      skos:prefLabel "Vijver"@nl;
+      skos:definition "?"@nl;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Vijver> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Zee rdf:type skos:Concept;
+      rdfs:label "Zee"@nl;
+      skos:prefLabel "Zee"@nl;
+      skos:definition "Uitgestrekt oppervlak zout water."@nl;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Zee> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Waterloop rdf:type skos:Concept;
+      rdfs:label "Waterloop"@nl;
+      skos:prefLabel "Waterloop"@nl;
+      skos:definition "Een langgerekte verlaging in het terrein van natuurlijke of kunstmatige oorsprong die permanent of periodiek stromend water bevat. "@nl;
+      skos:broader sor_begrip:WaterObject;
+      skos_thes:broaderGeneric  sor_begrip:WaterObject;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Waterloop> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Rivier rdf:type skos:Concept;
+      rdfs:label "Rivier"@nl;
+      skos:prefLabel "Rivier"@nl;
+      skos:definition "Het water dat ten atmosferische neerslag op hellende terreinen valt vloeit voor zover het niet verdampt of door planten wordt opgenomen tezamen tot een waterloop en stroomt naar laaggelegen streken. Zulk een natuurlijke afvloeiing heet een rivier."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Rivier> ;
+      dcterms:source begrippenkaders:imgeo .                    
+
+sor_begrip:Sloot rdf:type skos:Concept;
+      rdfs:label "Sloot"@nl;
+      skos:prefLabel "Sloot"@nl;
+      skos:definition "Een waterloop van beperkte breedte die stilstaand of langzaam stromend water bevat , welke is aangelegd met als doel het beheersen van het waterpeil."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Sloot> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Kanaal rdf:type skos:Concept;
+      rdfs:label "Kanaal"@nl;
+      skos:prefLabel "Kanaal"@nl;
+      skos:definition "Een gegraven grote waterloop die dient voor scheepvaart en of watertransport."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kanaal> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Beek rdf:type skos:Concept;
+      rdfs:label "Beek"@nl;
+      skos:prefLabel "Beek"@nl;
+      skos:definition "Een natuurlijke smalle waterloop zonder getij, die veelal doorwaadbaar is en afwatert op een rivier."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Beek> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Gracht rdf:type skos:Concept;
+      rdfs:label "Gracht"@nl;
+      skos:prefLabel "Gracht"@nl;
+      skos:definition "Een gracht is een gegraven greppel met water die hoofdzakelijk voorkomt in oude steden."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Gracht> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Bron rdf:type skos:Concept;
+      rdfs:label "Bron"@nl;
+      skos:prefLabel "Bron"@nl;
+      skos:definition "Grondwater dat op natuurlijke wijze uit het aardoppervlak tevoorschijn komt."@nl;
+      skos:broader sor_begrip:Waterloop;
+      skos_thes:broaderGeneric  sor_begrip:Waterloop;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bron> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Getijdengebied rdf:type skos:Concept;
+      rdfs:label "Getijdengebied"@nl;
+      skos:prefLabel "Getijdengebied"@nl;
+      skos:definition "Geheel of gedeeltelijk droogvallende gronden, buitendijks gelegen."@nl;
+      skos:broader sor_begrip:WaterObject;
+      skos_thes:broaderGeneric sor_begrip:WaterObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imbrt/id/begrip/Droogvallend> ;
+      dcterms:source begrippenkaders:imbrt ;
+      edit:issue [
+            dcterms:identifier 2 ;
+      ] .
+
+sor_begrip:Slik rdf:type skos:Concept;
+      rdfs:label "Slik"@nl;
+      skos:prefLabel "Slik"@nl;
+      skos:definition "Buitendijks aangeslibde, onbegroeide grond die bij vrijwel elk hoogwater onderloopt."@nl;
+      skos:broader sor_begrip:Getijdengebied;
+      skos_thes:broaderGeneric sor_begrip:Getijdengebied;      
+      skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Schor rdf:type skos:Concept;
+      rdfs:label "Schor"@nl;
+      skos:prefLabel "Schor"@nl;
+      skos:definition "Buitendijks aangeslibd land, dat bij gewone vloed niet meer onderloopt en doorgaans begroeid is."@nl;
+      skos:broader sor_begrip:Getijdengebied;
+      skos_thes:broaderGeneric sor_begrip:Getijdengebied;      
+      skos:inScheme begrippenkaders:sor .      
