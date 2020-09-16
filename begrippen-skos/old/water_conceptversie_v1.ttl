@@ -7,6 +7,7 @@
 @prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
 @prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
 @prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
 
 begrippenkaders:sor a skos:ConceptScheme;
 	rdfs:label "Begrippenkader van de Samenhangende Objectenregistratie (SOR)".
@@ -29,7 +30,7 @@ sor_begrip:Bodemval rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bodemval> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Brug rdf:type skos:Concept;
       rdfs:label "Brug"@nl;
@@ -51,18 +52,20 @@ sor_begrip:Coupure rdf:type skos:Concept;
       skos:inScheme begrippenkaders:sor;
       skos:scopeNote "Zowel objecttype coupure complex (functioneel) als coupure (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld."@nl ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Coupure> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Coupurecomplex rdf:type skos:Concept;
       rdfs:label "Coupure complex"@nl;
       skos:prefLabel "Coupure complex"@nl;
-      skos:definition "Een onderbreking in een waterkering voor de doorvoer van een weg of spoorweg die bij extreme waterstanden afsluitbaar is."@nl;
-      skos:broader sor_begrip:FunctioneelObject;
-      skos_thes:broaderGeneric sor_begrip:FunctioneelObject;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Complex;
+      skos_thes:broaderGeneric sor_begrip:Complex;
       skos:inScheme begrippenkaders:sor;
-      skos:scopeNote "Zowel objecttype coupure complex (functioneel) als coupure (fysiek) zijn allebei nodig. Hier wordt het functionele object bedoeld."@nl ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Coupure> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Dek rdf:type skos:Concept;
       rdfs:label "Dek"@nl;
@@ -79,8 +82,8 @@ sor_begrip:Duiker rdf:type skos:Concept;
       skos:broader sor_begrip:Ondertunneling;
       skos_thes:broaderGeneric sor_begrip:Ondertunneling;
       skos:inScheme begrippenkaders:sor;
-      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Duiker> ;
-      dcterms:source begrippenkaders:imgeo . 
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Duiker>,  <https://www.aquolex.nl/items/skos?id=24666>;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> .
 
 sor_begrip:Ecoduct rdf:type skos:Concept;
       rdfs:label "Ecoduct"@nl;
@@ -89,8 +92,8 @@ sor_begrip:Ecoduct rdf:type skos:Concept;
       skos:broader sor_begrip:Overbrugging;
       skos_thes:broaderGeneric sor_begrip:Overbrugging;
       skos:inScheme begrippenkaders:sor;
-      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ecoduct> ;
-      dcterms:source begrippenkaders:imgeo . 
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ecoduct>, <https://www.aquolex.nl/items/skos?id=24721> ;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> . 
 
 sor_begrip:FlyOver rdf:type skos:Concept;
       rdfs:label "Fly-over"@nl;
@@ -100,7 +103,11 @@ sor_begrip:FlyOver rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Overbrugging;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Fly-over> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+	    dcterms:description "Bestaande definitie niet consistent."@nl;
+      ] .
 
 sor_begrip:Gemaal rdf:type skos:Concept;
       rdfs:label "Gemaal"@nl;
@@ -116,21 +123,64 @@ sor_begrip:Gemaal rdf:type skos:Concept;
 sor_begrip:Gemaalcomplex rdf:type skos:Concept;
       rdfs:label "Gemaal complex"@nl;
       skos:prefLabel "Gemaal complex"@nl;
-      skos:definition "Een kunstwerk in principe bedoeld om water van een laag peil naar een hoog peil te brengen."@nl;
-      skos:broader sor_begrip:FunctioneelObject;
-      skos_thes:broaderGeneric sor_begrip:FunctioneelObject;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Complex;
+      skos_thes:broaderGeneric sor_begrip:Complex;
       skos:inScheme begrippenkaders:sor;
-      skos:scopeNote "Zowel objecttype gemaal complex (functioneel) als gemaal (fysiek) zijn allebei nodig. Hier wordt het functionele object bedoeld."@nl ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Gemaal> ;
+      dcterms:source begrippenkaders:imsor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Constructie rdf:type skos:Concept;
+      rdfs:label "Constructie"@nl;
+      skos:prefLabel "Constructie"@nl;
+      skos:definition "Bestaat uit de verschillende bouwwerken (niet gebouw zijnde)."@nl;
+      skos:broader sor_begrip:FysiekObject;
+      skos_thes:broaderGeneric sor_begrip:FysiekObject;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/doc/begrip/OverigBouwwerk> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Getijdengebied rdf:type skos:Concept;
+      rdfs:label "Getijdengebied"@nl;
+      skos:prefLabel "Getijdengebied"@nl;
+      skos:definition "Geheel of gedeeltelijk droogvallende gronden, buitendijks gelegen."@nl;
+      skos:broader sor_begrip:Waterdeel;
+      skos_thes:broaderGeneric sor_begrip:Waterdeel;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imbrt/doc/begrip/Droogvallend> ;
+      dcterms:source begrippenkaders:imbrt ;
+      edit:issue [
+            dcterms:identifier 2 ;
+      ] .
+
+sor_begrip:Deksel rdf:type skos:Concept;
+      rdfs:label "Deksel"@nl;
+      skos:prefLabel "Deksel"@nl;
+      skos:definition "Het afsluitende deel van een gegraven, koker of lijnvormige constructie waarin zich (vloei)stoffen kunnen bevinden."@nl;
+      skos:broader sor_begrip:Constructie;
+      skos_thes:broaderGeneric sor_begrip:Constructie;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Put> ;
       dcterms:source begrippenkaders:imgeo . 
 
 sor_begrip:Kolk rdf:type skos:Concept;
       rdfs:label "Kolk"@nl;
       skos:prefLabel "Kolk"@nl;
       skos:definition "Op het riool aangesloten voorziening voor de opvang van hemel- en afvalwater afkomstig van erop aangesloten oppervlakken."@nl;
+      skos:broader sor_begrip:Deksel;
+      skos_thes:broaderGeneric sor_begrip:Deksel;      
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kolk> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Landhoofd rdf:type skos:Concept;
       rdfs:label "Landhoofd"@nl;
@@ -143,14 +193,18 @@ sor_begrip:Landhoofd rdf:type skos:Concept;
 sor_begrip:Ondertunneling rdf:type skos:Concept;
       rdfs:label "Ondertunneling"@nl;
       skos:prefLabel "Ondertunneling"@nl;
-      skos:definition "?"@nl;
+      skos:definition " "@nl;
       skos:broader sor_begrip:Kunstwerk;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
-      skos:inScheme begrippenkaders:sor .
+      skos:inScheme begrippenkaders:sor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Overbrugging rdf:type skos:Concept;
-      rdfs:label "Overbruggingsconstructie"@nl;
-      skos:prefLabel "Overbruggingsconstructie"@nl;
+      rdfs:label "Overbrugging"@nl;
+      skos:prefLabel "Overbrugging"@nl;
+      skos:altLabel "Overbruggingsconstructie"@nl;
       skos:definition "Een beweegbare of vaste verbinding tussen twee punten, die door water, een weg of anderszins  gescheiden zijn,  bestaande uit een brugdek/-bak met landhoofden en veelal gesteund door pijlers."@nl;
       skos:broader sor_begrip:Kunstwerk;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
@@ -158,7 +212,10 @@ sor_begrip:Overbrugging rdf:type skos:Concept;
       skos:narrower sor_begrip:Dek, sor_begrip:Pijler, sor_begrip:Landhoofd, sor_begrip:Sloof, sor_begrip:Pyloon ;
       skos_thes:narrowerPartitive sor_begrip:Dek, sor_begrip:Pijler, sor_begrip:Landhoofd, sor_begrip:Sloof, sor_begrip:Pyloon ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Overbruggingsdeel> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .
 
 sor_begrip:Overkluizing rdf:type skos:Concept;
       rdfs:label "Overkluizing"@nl;
@@ -173,6 +230,7 @@ sor_begrip:Overkluizing rdf:type skos:Concept;
 sor_begrip:Pijler rdf:type skos:Concept;
       rdfs:label "Pijler"@nl;
       skos:prefLabel "Pijler"@nl;
+      skos:definition "Ondersteuningsconstructie van bruggen en soortgelijke kunstwerken."@nl;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Pijler> ;
       dcterms:source begrippenkaders:imgeo . 
@@ -180,12 +238,12 @@ sor_begrip:Pijler rdf:type skos:Concept;
 sor_begrip:Ponton rdf:type skos:Concept;
       rdfs:label "Ponton"@nl;
       skos:prefLabel "Ponton"@nl;
-      skos:definition "Drijvende dichte bak waarover soms een dek is gelegd."@nl ;
+      skos:definition "Vastliggend drijflichaam, dat dienst doet als aanlegplaats van vaartuigen of daartoe toegang geeft."@nl ;
       skos:broader sor_begrip:Kunstwerk;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ponton> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Voorde rdf:type skos:Concept;
       rdfs:label "Voorde"@nl;
@@ -195,7 +253,7 @@ sor_begrip:Voorde rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Voorde> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Kering rdf:type skos:Concept;
       rdfs:label "Kering"@nl;
@@ -220,7 +278,7 @@ sor_begrip:Waterbergingsgebied rdf:type skos:Concept;
 sor_begrip:Pyloon rdf:type skos:Concept;
       rdfs:label "Pyloon"@nl;
       skos:prefLabel "Pyloon"@nl;
-      skos:definition "Boven de bovenbouw uitstekende draagconstructie voor tuien kabels ."@nl ;
+      skos:definition "Boven de bovenbouw uitstekende draagconstructie voor tuien (kabels)."@nl ;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Pyloon> ;
       dcterms:source begrippenkaders:imgeo . 
@@ -259,19 +317,24 @@ sor_begrip:Sluis rdf:type skos:Concept;
 sor_begrip:Sluiscomplex rdf:type skos:Concept;
       rdfs:label "Sluis complex"@nl;
       skos:prefLabel "Sluis complex"@nl;
-      skos:definition "Een kunstmatige, afsluitbare waterkering die een scheepvaartverbinding tussen twee wateren met verschillende waterpeilen mogelijk maakt."@nl;
-      skos:broader sor_begrip:FunctioneelObject;
-      skos_thes:broaderGeneric sor_begrip:FunctioneelObject;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Complex;
+      skos_thes:broaderGeneric sor_begrip:Complex;
       skos:inScheme begrippenkaders:sor;
-      skos:scopeNote "Zowel objecttype sluis complex (functioneel) als sluis (fysiek) zijn allebei nodig. Hier wordt het functionele object bedoeld." ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Sluis> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imsor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Sluisdeur rdf:type skos:Concept;
       rdfs:label "Sluisdeur"@nl;
       skos:prefLabel "Sluisdeur"@nl;
-      skos:definition "?"@nl;
-      skos:inScheme begrippenkaders:sor .
+      skos:definition " "@nl;
+      skos:inScheme begrippenkaders:sor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Steiger rdf:type skos:Concept;
       rdfs:label "Steiger"@nl;
@@ -281,7 +344,7 @@ sor_begrip:Steiger rdf:type skos:Concept;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Steiger> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Strekdam rdf:type skos:Concept;
       rdfs:label "Strekdam"@nl;
@@ -293,7 +356,7 @@ sor_begrip:Strekdam rdf:type skos:Concept;
       skos:altLabel "pier, golfbreker" ;
       skos:scopeNote "Totale constructie, met palen en verharding. Kan bij zee en rivier voorkomen." ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Strekdam> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Stuw rdf:type skos:Concept;
       rdfs:label "Stuw"@nl;
@@ -304,18 +367,50 @@ sor_begrip:Stuw rdf:type skos:Concept;
       skos:inScheme begrippenkaders:sor;
       skos:scopeNote "Zowel objecttype stuw complex (functioneel) als stuw (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld." ;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Stuw> ;
-      dcterms:source begrippenkaders:imgeo . 
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Stuwcomplex rdf:type skos:Concept;
       rdfs:label "Stuw complex"@nl;
       skos:prefLabel "Stuw complex"@nl;
-      skos:definition "Een vaste of beweegbare constructie in het water die dient om de waterstand bovenstrooms en/of benedenstrooms van de constructie te regelen."@nl;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Complex;
+      skos_thes:broaderGeneric sor_begrip:Complex;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Stuw> ;
+      dcterms:source begrippenkaders:imsor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Kademuur rdf:type skos:Concept;
+      rdfs:label "Kademuur"@nl;
+      skos:prefLabel "Kademuur"@nl;
+      skos:definition "Grondkerende constructie tegen afkalving van de walkant, in de vorm van een verticale wand ter scheiding van land en water, opgebouwd uit een muur van gemetselde stenen of gestort beton."@nl;
       skos:broader sor_begrip:Kunstwerk;
       skos_thes:broaderGeneric sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
-      skos:scopeNote "Zowel objecttype stuw complex (functioneel) als stuw (fysiek) zijn allebei nodig. Hier wordt het functionele object bedoeld." ;
-      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Stuw> ;
-      dcterms:source begrippenkaders:imgeo . 
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kademuur> <https://www.aquolex.nl/items/skos?id=27025>;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> .
+
+sor_begrip:Damwand rdf:type skos:Concept;
+      rdfs:label "Damwand"@nl;
+      skos:prefLabel "Damwand"@nl;
+      skos:definition "Grondkerende of waterkerende constructie bestaande uit (nagenoeg) verticaal in de grond aangebrachte elementen die door middel van een langsprofiel in elkaar grijpen."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://ont.cbnl.org/cb/def/CB01427>;
+      dcterms:source <http://ont.cbnl.org> .
+
+sor_begrip:Walbescherming rdf:type skos:Concept;
+      rdfs:label "Walbescherming"@nl;
+      skos:prefLabel "Walbescherming"@nl;
+      skos:definition "Een nagenoeg verticale wand tot kering van grond om afkalving van water te voorkomen, niet zijnde een kademuur."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/doc/begrip/Walbescherming>;
+      dcterms:source begrippenkaders:imgeo .
 
 sor_begrip:Tunnel rdf:type skos:Concept;
       rdfs:label "Tunnel"@nl;
@@ -324,7 +419,8 @@ sor_begrip:Tunnel rdf:type skos:Concept;
       skos:broader sor_begrip:Ondertunneling;
       skos_thes:broaderGeneric sor_begrip:Ondertunneling;
       skos:inScheme begrippenkaders:sor;
-      dcterms:source <http://ont.cbnl.org/cb/def/CB01935> . 
+      skos:relatedMatch <http://ont.cbnl.org/cb/def/CB01935> ;
+      dcterms:source <http://ont.cbnl.org> . 
 
 sor_begrip:Viaduct rdf:type skos:Concept;
       rdfs:label "Viaduct"@nl;
@@ -340,7 +436,7 @@ sor_begrip:Viaduct rdf:type skos:Concept;
 sor_begrip:Vispassage rdf:type skos:Concept;
       rdfs:label "Vispassage"@nl;
       skos:prefLabel "Vispassage"@nl;
-      skos:definition "Een kunstmatige passage ten behoeve van de vistrek bij kunstwerken in wateren. "@nl;
+      skos:definition "Een waterbouwkundig constructie dat tot doel heeft vissen toegang te bieden tot een door een kunstwerk onbereikbaar geworden achterland. "@nl;
       skos:broader sor_begrip:Kunstwerk;
       skos_thes:broaderGeneric  sor_begrip:Kunstwerk;
       skos:inScheme begrippenkaders:sor;
@@ -351,8 +447,8 @@ sor_begrip:Zee rdf:type skos:Concept;
       rdfs:label "Zee"@nl;
       skos:prefLabel "Zee"@nl;
       skos:definition "Uitgestrekt oppervlak zout water."@nl;
-      skos:broader sor_begrip:Waterdeel;
-      skos_thes:broaderGeneric  sor_begrip:Waterdeel;
+      skos:broader sor_begrip:Watervlakte;
+      skos_thes:broaderGeneric  sor_begrip:Watervlakte;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Zee> ;
       dcterms:source begrippenkaders:imgeo .            
@@ -360,7 +456,7 @@ sor_begrip:Zee rdf:type skos:Concept;
 sor_begrip:Waterloop rdf:type skos:Concept;
       rdfs:label "Waterloop"@nl;
       skos:prefLabel "Waterloop"@nl;
-      skos:definition "Een voor de waterbeheersing bestemde geul die meestal permanent water bevat zoals rivier, kanaal, beek, sloot, gracht. "@nl;
+      skos:definition "Een langgerekte verlaging in het terrein van natuurlijke of kunstmatige oorsprong die permanent of periodiek stromend water bevat. "@nl;
       skos:broader sor_begrip:Waterdeel;
       skos_thes:broaderGeneric  sor_begrip:Waterdeel;
       skos:inScheme begrippenkaders:sor;
@@ -380,7 +476,7 @@ sor_begrip:Rivier rdf:type skos:Concept;
 sor_begrip:Sloot rdf:type skos:Concept;
       rdfs:label "Sloot"@nl;
       skos:prefLabel "Sloot"@nl;
-      skos:definition "Algemene benaming voor een waterloop van beperkte breedte die stilstaand of slechts langzaam stromend water bevat."@nl;
+      skos:definition "Een waterloop van beperkte breedte die stilstaand of langzaam stromend water bevat , welke is aangelegd met als doel het beheersen van het waterpeil."@nl;
       skos:broader sor_begrip:Waterloop;
       skos_thes:broaderGeneric  sor_begrip:Waterloop;
       skos:inScheme begrippenkaders:sor;
@@ -400,7 +496,7 @@ sor_begrip:Kanaal rdf:type skos:Concept;
 sor_begrip:Beek rdf:type skos:Concept;
       rdfs:label "Beek"@nl;
       skos:prefLabel "Beek"@nl;
-      skos:definition "Een natuurlijke smalle waterloop zonder getij."@nl;
+      skos:definition "Een natuurlijke smalle waterloop zonder getij, die veelal doorwaadbaar is en afwatert op een rivier."@nl;
       skos:broader sor_begrip:Waterloop;
       skos_thes:broaderGeneric  sor_begrip:Waterloop;
       skos:inScheme begrippenkaders:sor;
@@ -430,62 +526,80 @@ sor_begrip:Bron rdf:type skos:Concept;
 sor_begrip:Havencomplex rdf:type skos:Concept;
       rdfs:label "Havencomplex"@nl;
       skos:prefLabel "Havencomplex"@nl;
-      skos:definition "Een tot ligplaats van schepen geschikt natuurlijk of gegraven waterbekken aan zee of aan de oever van een rivier of binnenwater dat beschutting biedt tegen wind en golven. "@nl;
-      skos:broader sor_begrip:FunctioneelObject;
-      skos_thes:broaderGeneric  sor_begrip:FunctioneelObject;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Complex;
+      skos_thes:broaderGeneric  sor_begrip:Complex;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Haven> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imsor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Watervlakte rdf:type skos:Concept;
       rdfs:label "Watervlakte"@nl;
       skos:prefLabel "Watervlakte"@nl;
-      skos:definition "Alle oppervlakken die vrij permanent met zoet water zijn bedekt."@nl;
+      skos:definition "Een verlaging in het aardoppervlak van natuurlijke of kunstmatige oorsprong, die permanent of periodiek water bevat."@nl;
       skos:broader sor_begrip:Waterdeel;
       skos_thes:broaderGeneric  sor_begrip:Waterdeel;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Watervlakte> ;
-      dcterms:source begrippenkaders:imgeo .  
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 2 ;
+      ] .
 
 sor_begrip:Meer rdf:type skos:Concept;
       rdfs:label "Meer"@nl;
       skos:prefLabel "Meer"@nl;
-      skos:definition "Een massa stilstaand landoppervlaktewater.?"@nl;
+      skos:definition " "@nl;
       skos:broader sor_begrip:Watervlakte;
       skos_thes:broaderGeneric  sor_begrip:Watervlakte;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Meer> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Plas rdf:type skos:Concept;
       rdfs:label "Plas"@nl;
       skos:prefLabel "Plas"@nl;
-      skos:definition "Een massa stilstaand landoppervlaktewater.?"@nl;
+      skos:definition "?"@nl;
       skos:broader sor_begrip:Watervlakte;
       skos_thes:broaderGeneric  sor_begrip:Watervlakte;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Plas> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Ven rdf:type skos:Concept;
       rdfs:label "Ven"@nl;
       skos:prefLabel "Ven"@nl;
-      skos:definition "Een massa stilstaand landoppervlaktewater.?"@nl;
+      skos:definition "?"@nl;
       skos:broader sor_begrip:Watervlakte;
       skos_thes:broaderGeneric  sor_begrip:Watervlakte;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ven> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Vijver rdf:type skos:Concept;
       rdfs:label "Vijver"@nl;
       skos:prefLabel "Vijver"@nl;
-      skos:definition "Een massa stilstaand landoppervlaktewater.?"@nl;
+      skos:definition "?"@nl;
       skos:broader sor_begrip:Watervlakte;
       skos_thes:broaderGeneric  sor_begrip:Watervlakte;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Vijver> ;
-      dcterms:source begrippenkaders:imgeo .
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:FysiekObject rdf:type skos:Concept;
       rdfs:label "Fysiek object"@nl;
@@ -507,30 +621,49 @@ sor_begrip:FunctioneelObject rdf:type skos:Concept;
       skos:relatedMatch nen3610_begrip:FunctioneelObject ;
       dcterms:source begrippenkaders:nen3610 .
 
+sor_begrip:Complex rdf:type skos:Concept;
+      rdfs:label "Complex"@nl;
+      skos:prefLabel "Complex"@nl;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:FunctioneelObject;
+      skos_thes:broaderGeneric sor_begrip:FunctioneelObject;
+      skos:inScheme begrippenkaders:sor;
+      dcterms:source begrippenkaders:imsor
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
 sor_begrip:SorObject rdf:type skos:Concept;
       rdfs:label "SOR object"@nl;
       skos:prefLabel "SOR object"@nl;
-      skos:definition "?"@nl;
-      skos:inScheme begrippenkaders:sor.
+      skos:definition " "@nl;
+      skos:inScheme begrippenkaders:sor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
 
 sor_begrip:Kunstwerk rdf:type skos:Concept;
       rdfs:label "Kunstwerk"@nl;
       skos:prefLabel "Kunstwerk"@nl;
-      skos:definition "Oppervlak permanent of periodiek bedekt met water."@nl;
-      skos:broader sor_begrip:FysiekObject ;
-      skos_thes:broaderGeneric sor_begrip:FysiekObject ;
+      skos:definition "Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen en niet bedoeld voor permanent menselijk verblijf"@nl;
+      skos:broader sor_begrip:Constructie ;
+      skos_thes:broaderGeneric sor_begrip:Constructie ;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch nen3610_begrip:Kunstwerk ;
-      dcterms:source begrippenkaders:nen3610 .
+      dcterms:source begrippenkaders:nen3610 ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .
 
 sor_begrip:Waterdeel rdf:type skos:Concept;
       rdfs:label "Waterdeel"@nl;
       skos:prefLabel "Waterdeel"@nl;
-      skos:definition "Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en of leidingen en niet bedoeld voor permanent menselijk verblijf. "@nl;
+      skos:definition "Grondoppervlak permanent of periodiek bedekt met water. "@nl;
       skos:broader sor_begrip:FysiekObject ;
       skos_thes:broaderGeneric sor_begrip:FysiekObject ;
       skos:inScheme begrippenkaders:sor;
       skos:relatedMatch nen3610_begrip:Water ;
-      dcterms:source begrippenkaders:nen3610 .
-
-
+      dcterms:source begrippenkaders:nen3610 ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .

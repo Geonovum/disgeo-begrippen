@@ -1,0 +1,1273 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos_thes: <http://purl.org/iso25964/skos-thes#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix sor_collectie: <http://brt.basisregistraties.overheid.nl/top10nl/id/collectie/>.
+@prefix sor_begrip: <http://definities.geostandaarden.nl/imsor/id/begrip/>.
+@prefix nen3610_begrip: <http://definities.geostandaarden.nl/nen3610/id/begrip/>.
+@prefix imgeo_begrip: <http://definities.geostandaarden.nl/imgeo/id/begrip/>.
+@prefix begrippenkaders: <https://definities.geostandaarden.nl/id/begrippenkader/>.
+@prefix edit: <http://definities.geostandaarden.nl/def/editorial#> .
+
+### CONSTRUCTIE - GEBOUW
+
+### CONSTRUCTIE - KUNSTWERKEN
+
+sor_begrip:Aquaduct rdf:type skos:Concept;
+      rdfs:label "Aquaduct"@nl;
+      skos:prefLabel "Aquaduct"@nl;
+      skos:definition "Overbruggingsconstructie waarmee een watergang door een bakvormige constructie over een weg, een spoorweg, een andere watergang, een leiding of een terrein wordt geleid."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Aquaduct> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Bodemval rdf:type skos:Concept;
+      rdfs:label "Bodemval"@nl;
+      skos:prefLabel "Bodemval"@nl;
+      skos:definition "Sprong in de bodem van een waterloop."@nl;
+      skos:broader  sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bodemval> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Brug rdf:type skos:Concept;
+      rdfs:label "Brug"@nl;
+      skos:prefLabel "Brug"@nl;
+      skos:definition "Overbruggingsconstructie over een watervlakte of waterloop, bedoeld voor verkeer."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:scopeNote "T.o.v. het supertype gaat het hier alleen om het extra aspect dat het over water gaat." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Brug> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Coupure rdf:type skos:Concept;
+      rdfs:label "Coupure"@nl;
+      skos:prefLabel "Coupure"@nl;
+      skos:definition "Een onderbreking in een waterkering voor de doorvoer van een weg of spoorweg die bij extreme waterstanden afsluitbaar is."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:scopeNote "Zowel objecttype coupure complex (functioneel) als coupure (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld."@nl ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Coupure> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Damwand rdf:type skos:Concept;
+      rdfs:label "Damwand"@nl;
+      skos:prefLabel "Damwand"@nl;
+      skos:definition "Grondkerende of waterkerende constructie bestaande uit (nagenoeg) verticaal in de grond aangebrachte elementen die door middel van een langsprofiel in elkaar grijpen."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://ont.cbnl.org/cb/def/CB01427>;
+      dcterms:source <http://ont.cbnl.org> .
+
+sor_begrip:Dek rdf:type skos:Concept;
+      rdfs:label "Dek"@nl;
+      skos:prefLabel "Dek"@nl;
+      skos:definition "Direct door het verkeer belaste deel van de bovenbouw van de brug."@nl;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Dek> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Duiker rdf:type skos:Concept;
+      rdfs:label "Duiker"@nl;
+      skos:prefLabel "Duiker"@nl;
+      skos:definition "Kunstwerk voor de waterhuishouding, bestaande uit een gesloten kokervormige constructie met een in- en uitstroomopening, die niet de gehele waterbreedte beslaat, aangebracht onder een weg of spoorweg of in een dam of ander terreindeel en de bodem van de waterloop onderbreekt."@nl;
+      skos:broader sor_begrip:Ondertunneling;
+      skos_thes:broaderGeneric sor_begrip:Ondertunneling;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Duiker>,  <https://www.aquolex.nl/items/skos?id=24666>;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> .
+
+sor_begrip:Ecoduct rdf:type skos:Concept;
+      rdfs:label "Ecoduct"@nl;
+      skos:prefLabel "Ecoduct"@nl;
+      skos:definition "Overbruggingsconstructie over een weg of spoorweg,  bedoeld voor het passeren van dieren."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ecoduct>, <https://www.aquolex.nl/items/skos?id=24721> ;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> . 
+
+sor_begrip:Faunavoorziening rdf:type skos:Concept;
+      rdfs:label "Faunavoorziening"@nl;
+      skos:prefLabel "Faunavoorziening"@nl;
+      skos:definition "Voorziening bij een infrastructureel werk om de uit dat werk voortvloeiende negatieve gevolgen voor de fauna zoveel mogelijk te voorkomen of te beperken."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://ont.cbnl.org/cb/def/CB01999> ;
+      dcterms:source <http://ont.cbnl.org> . 
+
+sor_begrip:FlyOver rdf:type skos:Concept;
+      rdfs:label "Fly-over"@nl;
+      skos:prefLabel "Fly-over"@nl;
+      skos:definition "Kunstwerk in de vorm van een viaduct dat deel uitmaakt van een verkeersbaan en waarmee een verkeersstroom over twee of meer ongelijkvloerse verkeersstromen wordt geleid."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Fly-over> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+          dcterms:identifier 4 ;
+          dcterms:description "Bestaande definitie niet consistent."@nl;
+      ] .
+
+sor_begrip:Gemaal rdf:type skos:Concept;
+      rdfs:label "Gemaal"@nl;
+      skos:prefLabel "Gemaal"@nl;
+      skos:definition "Een kunstwerk in principe bedoeld om water van een laag peil naar een hoog peil te brengen."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:scopeNote "Zowel objecttype gemaal complex (functioneel) als gemaal (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Gemaal> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Kademuur rdf:type skos:Concept;
+      rdfs:label "Kademuur"@nl;
+      skos:prefLabel "Kademuur"@nl;
+      skos:definition "Grondkerende constructie tegen afkalving van de walkant, in de vorm van een verticale wand ter scheiding van land en water, opgebouwd uit een muur van gemetselde stenen of gestort beton."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kademuur>, <https://www.aquolex.nl/items/skos?id=27025>;
+      dcterms:source begrippenkaders:imgeo, <https://www.aquolex.nl/items/skos> .
+
+sor_begrip:Keermuur rdf:type skos:Concept;
+      rdfs:label "Keermuur"@nl;
+      skos:prefLabel "Keermuur"@nl;
+      skos:definition "Muur die door vorm, gewicht en fundering zonder verankering de grond keert."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://www.aquolex.nl/items/skos?id=27026> ;
+      dcterms:source <https://www.aquolex.nl/items/skos> . 
+
+sor_begrip:Kolk rdf:type skos:Concept;
+      rdfs:label "Kolk"@nl;
+      skos:prefLabel "Kolk"@nl;
+      skos:definition "Op het riool aangesloten voorziening voor de opvang van hemel- en afvalwater afkomstig van erop aangesloten oppervlakken."@nl;
+      skos:broader sor_begrip:Deksel;
+      skos_thes:broaderGeneric sor_begrip:Deksel;      
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Kolk> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Landhoofd rdf:type skos:Concept;
+      rdfs:label "Landhoofd"@nl;
+      skos:prefLabel "Landhoofd"@nl;
+      skos:definition "Ondersteuningsconstructie ter plaatse van een overgang van de aardebaan naar een kunstwerk. "@nl;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Landhoofd> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Ondertunneling rdf:type skos:Concept;
+      rdfs:label "Ondertunneling"@nl;
+      skos:prefLabel "Ondertunneling"@nl;
+      skos:definition " "@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .     
+
+sor_begrip:Overbrugging rdf:type skos:Concept;
+      rdfs:label "Overbrugging"@nl;
+      skos:prefLabel "Overbrugging"@nl;
+      skos:altLabel "Overbruggingsconstructie"@nl;
+      skos:definition "Een beweegbare of vaste verbinding tussen twee punten, die door water, een weg of anderszins  gescheiden zijn,  bestaande uit een brugdek/-bak met landhoofden en veelal gesteund door pijlers."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:narrower sor_begrip:Dek, sor_begrip:Pijler, sor_begrip:Landhoofd, sor_begrip:Sloof, sor_begrip:Pyloon ;
+      skos_thes:narrowerPartitive sor_begrip:Dek, sor_begrip:Pijler, sor_begrip:Landhoofd, sor_begrip:Sloof, sor_begrip:Pyloon ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Overbruggingsdeel> ;
+      dcterms:source begrippenkaders:imgeo ;
+      edit:issue [
+            dcterms:identifier 3 ;
+      ] .
+
+ sor_begrip:Overkluizing rdf:type skos:Concept;
+      rdfs:label "Overkluizing"@nl;
+      skos:prefLabel "Overkluizing"@nl;
+      skos:definition "Een civieltechnisch kunstwerk waarmee een weg, een plein of een waterloop (kruiselings) wordt overwelfd, waarbij het dek meestal niet uitsluitend uit een pad of weg bestaat."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Overkluizing> ;
+      dcterms:source begrippenkaders:imgeo .  
+
+sor_begrip:Pijler rdf:type skos:Concept;
+      rdfs:label "Pijler"@nl;
+      skos:prefLabel "Pijler"@nl;
+      skos:definition "Ondersteuningsconstructie van bruggen en soortgelijke kunstwerken."@nl;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Pijler> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Ponton rdf:type skos:Concept;
+      rdfs:label "Ponton"@nl;
+      skos:prefLabel "Ponton"@nl;
+      skos:definition "Vastliggend drijflichaam, dat dienst doet als aanlegplaats van vaartuigen of daartoe toegang geeft."@nl ;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Ponton> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Pyloon rdf:type skos:Concept;
+      rdfs:label "Pyloon"@nl;
+      skos:prefLabel "Pyloon"@nl;
+      skos:definition "Boven de bovenbouw uitstekende draagconstructie voor tuien (kabels)."@nl ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Pyloon> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Sloof rdf:type skos:Concept;
+      rdfs:label "Sloof"@nl;
+      skos:prefLabel "Sloof"@nl;
+      skos:definition "Deel van de pijler voor de overdracht van krachten naar de ondergrond of de fundering."@nl ;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Sloof> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Sluis rdf:type skos:Concept;
+      rdfs:label "Sluis"@nl;
+      skos:prefLabel "Sluis"@nl;
+      skos:definition "Een kunstmatige, afsluitbare waterkering die een scheepvaartverbinding tussen twee wateren met verschillende waterpeilen mogelijk maakt."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:narrower sor_begrip:Sluisdeur, sor_begrip:Kolk ;
+      skos_thes:narrowerPartitive sor_begrip:Sluisdeur, sor_begrip:Kolk ;
+      skos:scopeNote "Zowel objecttype sluis complex (functioneel) als sluis (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Sluis> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Sluisdeur rdf:type skos:Concept;
+      rdfs:label "Sluisdeur"@nl;
+      skos:prefLabel "Sluisdeur"@nl;
+      skos:definition " "@nl;
+      skos:inScheme begrippenkaders:sor ;
+      edit:issue [
+            dcterms:identifier 4 ;
+      ] .
+
+sor_begrip:Steiger rdf:type skos:Concept;
+      rdfs:label "Steiger"@nl;
+      skos:prefLabel "Steiger"@nl;
+      skos:definition "Vaste (niet drijvende) waterbouwkundige constructie, verbonden met de wal, voor het aanleggen van schepen en bedoeld om deze schepen vanaf de wal te laden en te lossen."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Steiger> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Strekdam rdf:type skos:Concept;
+      rdfs:label "Strekdam"@nl;
+      skos:prefLabel "Strekdam"@nl;
+      skos:definition "Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de oevers of brugpijlers of ter beheersing van de rivier."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:altLabel "pier, golfbreker" ;
+      skos:scopeNote "Totale constructie, met palen en verharding. Kan bij zee en rivier voorkomen." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Strekdam> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Stuw rdf:type skos:Concept;
+      rdfs:label "Stuw"@nl;
+      skos:prefLabel "Stuw"@nl;
+      skos:definition "Een vaste of beweegbare constructie in het water die dient om de waterstand bovenstrooms en/of benedenstrooms van de constructie te regelen."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:scopeNote "Zowel objecttype stuw complex (functioneel) als stuw (fysiek) zijn allebei nodig. Hier wordt het fysieke object bedoeld." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Stuw> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Tunnel rdf:type skos:Concept;
+      rdfs:label "Tunnel"@nl;
+      skos:prefLabel "Tunnel"@nl;
+      skos:definitie "Kokervormig kunstwerk onder een of meer wegen, spoorwegen, waterwegen en/of andere hindernissen, als ondergrondse doorgang voor verkeer, leidingen of dieren."@nl ;
+      skos:broader sor_begrip:Ondertunneling;
+      skos_thes:broaderGeneric sor_begrip:Ondertunneling;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://ont.cbnl.org/cb/def/CB01935> ;
+      dcterms:source <http://ont.cbnl.org> .           
+
+sor_begrip:Viaduct rdf:type skos:Concept;
+      rdfs:label "Viaduct"@nl;
+      skos:prefLabel "Viaduct"@nl;
+      skos:definition "Overbruggingsconstructie over een weg, spoorweg of terreinverdieping, bedoeld voor verkeer."@nl;
+      skos:broader sor_begrip:Overbrugging;
+      skos_thes:broaderGeneric sor_begrip:Overbrugging;
+      skos:inScheme begrippenkaders:sor;
+      skos:scopeNote "T.o.v. het supertype gaat het hier alleen om het extra aspect dat het over terrein etc. gaat." ;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Viaduct> ;
+      dcterms:source begrippenkaders:imgeo . 
+
+sor_begrip:Vispassage rdf:type skos:Concept;
+      rdfs:label "Vispassage"@nl;
+      skos:prefLabel "Vispassage"@nl;
+      skos:definition "Een waterbouwkundig constructie dat tot doel heeft vissen toegang te bieden tot een door een kunstwerk onbereikbaar geworden achterland. "@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric  sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Vispassage> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Voorde rdf:type skos:Concept;
+      rdfs:label "Voorde"@nl;
+      skos:prefLabel "Voorde"@nl;
+      skos:definition "Een doorwaadbare doorgaans verharde plaats in de waterloop die dient voor de oversteek van die waterloop."@nl ;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Voorde> ;
+      dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Walbescherming rdf:type skos:Concept;
+      rdfs:label "Walbescherming"@nl;
+      skos:prefLabel "Walbescherming"@nl;
+      skos:definition "Een nagenoeg verticale wand tot kering van grond om afkalving van water te voorkomen, niet zijnde een kademuur."@nl;
+      skos:broader sor_begrip:Kunstwerk;
+      skos_thes:broaderGeneric sor_begrip:Kunstwerk;
+      skos:inScheme begrippenkaders:sor;
+      skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Walbescherming>;
+      dcterms:source begrippenkaders:imgeo .
+
+# CONSTRUCTIE - VERHARDING
+
+sor_begrip:Asfaltverharding rdf:type skos:Concept;
+      rdfs:label "Asfaltverharding"@nl;
+      skos:prefLabel "Asfaltverharding"@nl;
+      skos:definition "Gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen."@nl;
+      skos:broader sor_begrip:Verharding;
+      skos_thes:broaderGeneric sor_begrip:Verharding;
+      skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Betonverharding rdf:type skos:Concept;
+      rdfs:label "Betonverharding"@nl;
+      skos:prefLabel "Betonverharding"@nl;
+      skos:definition "Gesloten verharding bestaande uit gewapend of ongewapend beton."@nl;
+      skos:broader sor_begrip:Verharding;
+      skos_thes:broaderGeneric sor_begrip:Verharding;
+      skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Elementenverharding rdf:type skos:Concept;
+      rdfs:label "Elementenverharding"@nl;
+      skos:prefLabel "Elementenverharding"@nl;
+      skos:definition "Open verharding opgebouwd uit losse elementen die in meer of mindere mate met elkaar verbonden zijn."@nl;
+      skos:broader sor_begrip:Verharding;
+      skos_thes:broaderGeneric sor_begrip:Verharding;
+      skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Halfverharding rdf:type skos:Concept;
+      rdfs:label "Halfverharding"@nl;
+      skos:prefLabel "Halfverharding"@nl;
+      skos:definition "Open verharding bestaande uit onsamenhangend materiaal dat meer draagkracht levert dan de originele grond."@nl;
+      skos:broader sor_begrip:Verharding;
+      skos_thes:broaderGeneric sor_begrip:Verharding;
+      skos:inScheme begrippenkaders:sor .     
+
+sor_begrip:Kunststofverharding rdf:type skos:Concept;
+      rdfs:label "Kunststofverharding"@nl;
+      skos:prefLabel "Kunststofverharding"@nl;
+      skos:definition "Synthetisch vervaardigd materiaal dat als verharding dient."@nl;
+      skos:broader sor_begrip:Verharding;
+      skos_thes:broaderGeneric sor_begrip:Verharding;
+      skos:inScheme begrippenkaders:sor . 
+
+# CONSTRUCTIE (OVERIG)
+
+sor_begrip:AfvalApart rdf:type skos:Concept;
+            rdfs:label "Afval apart plaats";
+            skos:prefLabel "Afval apart plaats";
+            skos:definition "Boven- of ondergrondse opslagplaats voor het gescheiden inzamelen van afval, met stortkoker(s) op het straatniveau."@nl;
+            skos:broader sor_begrip:Bak;
+            skos_thes:broaderGeneric sor_begrip:Bak;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Bak rdf:type skos:Concept;
+            rdfs:label "Bak";
+            skos:prefLabel "Bak";
+            skos:definition "Object met een permanent karakter dat dient om iets in te bergen of te verzamelen. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Bak>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Bassin rdf:type skos:Concept;
+            rdfs:label "Bassin";
+            skos:prefLabel "Bassin";
+            skos:definition "Bekken met een ondoorlaatbare bodem waarin water opgelagen kan worden."@nl;
+            skos:broader sor_begrip:Bak;
+            skos_thes:broaderGeneric sor_begrip:Bak;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:BenzineOlieput rdf:type skos:Concept;
+            rdfs:label "Benzine-/olieput";
+            skos:prefLabel "Benzine-/olieput";
+            skos:definition "Putdeksel die toegang geeft tot een benzine- of olietank ten behoeve van vullen, onderhoud of inspectie."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Bovenleidingmast rdf:type skos:Concept;
+            rdfs:label "Bovenleidingmast";
+            skos:prefLabel "Bovenleidingmast";
+            skos:definition "Mast die een onderdeel vormt van de bovenleidingdraagconstructie voor het openbaar vervoer (trein, tram, bus)."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:BrandkraanPut rdf:type skos:Concept;
+            rdfs:label "Brandkraan/-put";
+            skos:prefLabel "Brandkraan/-put";
+            skos:definition "Op de drinkwaterleiding aangesloten kraan, of put voor het plaatsen van een brandkraan."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Container rdf:type skos:Concept;
+            rdfs:label "Container";
+            skos:prefLabel "Container";
+            skos:definition "Nagelvast met de grond verbonden inzamelmiddel voor afvalstoffen, doorgaans van metaal of kunststof waarin afvalstoffen worden verzameld, bewaard en waaruit deze afvalstoffen vervolgens worden overgeladen in een inzamelvoertuig."@nl;
+            skos:broader sor_begrip:Bak;
+            skos_thes:broaderGeneric sor_begrip:Bak;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Depot rdf:type skos:Concept;
+            rdfs:label "Depot";
+            skos:prefLabel "Depot";
+            skos:definition " Object met een permanent karakter dat dient om gassen, energie, vaste- en vloeistoffen in te bergen of te verzamelen. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Drainageput rdf:type skos:Concept;
+            rdfs:label "Drainageput";
+            skos:prefLabel "Drainageput";
+            skos:definition "Put welke toegang geeft naar een poreuze of geperforeerde buisleiding, aangebracht onder de grond om de afwatering van de grond te verbeteren."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Gasput rdf:type skos:Concept;
+            rdfs:label "Gasput";
+            skos:prefLabel "Gasput";
+            skos:definition "Put met afsluitkraan ten behoeve van het ondergrondse leidingenstelsel voor gastransport."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Geleideconstructie rdf:type skos:Concept;
+            rdfs:label "Geleideconstructie";
+            skos:prefLabel "Geleideconstructie";
+            skos:definition "Bermbeveiligingsconstructie bedoeld voor fysieke geleiding van voertuigen die uit de koers zijn geraakt."@nl;
+            skos:broader sor_begrip:Geleider;
+            skos_thes:broaderGeneric sor_begrip:Geleider;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Geleider rdf:type skos:Concept;
+            rdfs:label "Geleider";
+            skos:prefLabel "Geleider";
+            skos:definition " Een constructie bedoeld voor de fysieke (be)geleiding van voer-, vaartuigen. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor . 
+
+sor_begrip:Geleidewerk rdf:type skos:Concept;
+            rdfs:label "Geleidewerk";
+            skos:prefLabel "Geleidewerk";
+            skos:definition "Fuikvormige constructie aansluitend aan het hoofd van een kunstwerk voor het geven van mechanische en visuele geleiding tijdens het invaren van dat kunstwerk."@nl;
+            skos:broader sor_begrip:Geleider;
+            skos_thes:broaderGeneric sor_begrip:Geleider;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Hek rdf:type skos:Concept;
+            rdfs:label "Hek";
+            skos:prefLabel "Hek";
+            skos:definition "Een hekwerk of schutting om een gebied af te scheiden of de toegang te beheren."@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Hoogspanningsmast rdf:type skos:Concept;
+            rdfs:label "Hoogspanningsmast";
+            skos:prefLabel "Hoogspanningsmast";
+            skos:definition "Metalen mast of stellage ter ondersteuning van geleidedraden voor het transport van elektriciteit met een hoog voltage."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:InspectieRioolput rdf:type skos:Concept;
+            rdfs:label "Inspectie-/rioolput";
+            skos:prefLabel "Inspectie-/rioolput";
+            skos:definition "Put die toegang geeft tot een (riool)leiding."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Installatie rdf:type skos:Concept;
+            rdfs:label "Installatie";
+            skos:prefLabel "Installatie";
+            skos:definition " Een technisch samenhangend systeem dat een bepaald doel dient "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Kast rdf:type skos:Concept;
+            rdfs:label "Kast";
+            skos:prefLabel "Kast";
+            skos:definition "Object met een permanent karakter dat dient om iets in te bergen en te beschermen."@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Kast>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Kolk rdf:type skos:Concept;
+            rdfs:label "Kolk";
+            skos:prefLabel "Kolk";
+            skos:definition "Op het riool aangesloten voorziening voor de opvang van hemel- en afvalwater afkomstig van erop aangesloten oppervlakken."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Laagspanningsmast rdf:type skos:Concept;
+            rdfs:label "Laagspanningsmast";
+            skos:prefLabel "Laagspanningsmast";
+            skos:definition "Houten of metalen mast waaraan kabels voor het transport van elektrische energie met een spannning lager dan 500 V zijn bevestigd."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Lijnafwatering rdf:type skos:Concept;
+            rdfs:label "Lijnafwatering";
+            skos:prefLabel "Lijnafwatering";
+            skos:definition "Voorziening voor het afvoeren van overtollig hemel- en afvalwater afkomstig van erop aangesloten oppervlakken."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Mast rdf:type skos:Concept;
+            rdfs:label "Mast";
+            skos:prefLabel "Mast";
+            skos:definition " Een hoge draagconstructie voor de opwekking en transport van energie en elektromagnetische straling. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Muur rdf:type skos:Concept;
+            rdfs:label "Muur";
+            skos:prefLabel "Muur";
+            skos:definition "Relatief smal, rechtopstaand bouwwerk."@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imbrt/doc/begrip/Muur>;
+            dcterms:source begrippenkaders:imbrt .
+
+sor_begrip:Opslagtank rdf:type skos:Concept;
+            rdfs:label "Opslagtank";
+            skos:prefLabel "Opslagtank";
+            skos:definition "Bovengrondse opslagfaciliteit voor gassen, energie en vloeistoffen."@nl;
+            skos:broader sor_begrip:Depot;
+            skos_thes:broaderGeneric sor_begrip:Depot;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Paal rdf:type skos:Concept;
+            rdfs:label "Paal";
+            skos:prefLabel "Paal";
+            skos:definition "Langwerpig stuk hout, ijzer, steen enz., dat in de grond staat. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Paal>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Pomp rdf:type skos:Concept;
+            rdfs:label "Pomp";
+            skos:prefLabel "Pomp";
+            skos:definition "Technische inrichting om vloeistoffen en/of gassen te verplaatsen."@nl;
+            skos:broader sor_begrip:Installatie;
+            skos_thes:broaderGeneric sor_begrip:Installatie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Putdeksel rdf:type skos:Concept;
+            rdfs:label "Putdeksel";
+            skos:prefLabel "Putdeksel";
+            skos:definition "Het afsluitende deel van een gegraven, koker of lijnvormige constructie waarin zich (vloei)stoffen kunnen bevinden."@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Radarmast rdf:type skos:Concept;
+            rdfs:label "Radarmast";
+            skos:prefLabel "Radarmast";
+            skos:definition "Een hoge constructie die wordt gebruikt voor het bevestigen van radarantennes."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Raster rdf:type skos:Concept;
+            rdfs:label "Raster";
+            skos:prefLabel "Raster";
+            skos:definition "Kunstmatige terreinafscheiding, in de vorm van een overwegend houten, metalen of kunststoffen rechtopstaande palen met daartussen gaas of één of meerdere draden."@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Draadraster>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Remmingswerk rdf:type skos:Concept;
+            rdfs:label "Remmingswerk";
+            skos:prefLabel "Remmingswerk";
+            skos:definition "Constructie langs de opstelruimte en wachtruimte bedoeld voor het afmeren van schepen."@nl;
+            skos:broader sor_begrip:Geleider;
+            skos_thes:broaderGeneric sor_begrip:Geleider;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Rooster rdf:type skos:Concept;
+            rdfs:label "Rooster";
+            skos:prefLabel "Rooster";
+            skos:definition "Evenwijdig of kruiselings lopende staafconstructie voor het tegenhouden van vuil uit hemel- en afvalwater."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Scherm rdf:type skos:Concept;
+            rdfs:label "Scherm";
+            skos:prefLabel "Scherm";
+            skos:definition "Een lineaire constructie, typisch bedoeld om te reduceren. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor .                          
+
+sor_begrip:Sensor rdf:type skos:Concept;
+            rdfs:label "Sensor";
+            skos:prefLabel "Sensor";
+            skos:definition "Apparaat voor de meting van een fysieke grootheid (bijv. temperatuur, licht, druk, elektriciteit). "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Sensor>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Sirene rdf:type skos:Concept;
+            rdfs:label "Sirene";
+            skos:prefLabel "Sirene";
+            skos:definition "Een hoge constructie die wordt gebruikt voor het bevestigen van sirenes."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Straalzender rdf:type skos:Concept;
+            rdfs:label "Straalzender";
+            skos:prefLabel "Straalzender";
+            skos:definition "Een hoge constructie die wordt gebruikt voor het uitzenden van radio, televisie en telecommunicatie signalen."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Straatmeubilair rdf:type skos:Concept;
+            rdfs:label "Straatmeubilair";
+            skos:prefLabel "Straatmeubilair";
+            skos:definition "Een ruimtelijk object ter inrichting van de openbare ruimte. "@nl;
+            skos:broader sor_begrip:Constructie;
+            skos_thes:broaderGeneric sor_begrip:Constructie;
+            skos:inScheme begrippenkaders:sor ;
+            skos:relatedMatch <https://definities.geostandaarden.nl/imgeo/id/begrip/Straatmeubilair>;
+            dcterms:source begrippenkaders:imgeo .
+
+sor_begrip:Voedersilo rdf:type skos:Concept;
+            rdfs:label "Voedersilo";
+            skos:prefLabel "Voedersilo";
+            skos:definition "Opslagfaciliteit voor vaste stoffen (bijvoorbeeld veevoer), bestaande uit een verticale container met een opening aan de onderkant."@nl;
+            skos:broader sor_begrip:Depot;
+            skos_thes:broaderGeneric sor_begrip:Depot;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Verblindingswering rdf:type skos:Concept;
+            rdfs:label "Verblindingswering";
+            skos:prefLabel "Verblindingswering";
+            skos:definition "Constructie bedoeld om verblinding van weggebruikers door tegenlicht te voorkomen."@nl;
+            skos:broader sor_begrip:Geleider;
+            skos_thes:broaderGeneric sor_begrip:Geleider;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Waterleidingput rdf:type skos:Concept;
+            rdfs:label "Waterleidingput";
+            skos:prefLabel "Waterleidingput";
+            skos:definition "Put met afsluitkraan ten behoeve van het ondergrondse leidingenstelsel voor watertransport."@nl;
+            skos:broader sor_begrip:Putdeksel;
+            skos_thes:broaderGeneric sor_begrip:Putdeksel;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Windturbine rdf:type skos:Concept;
+            rdfs:label "Windturbine";
+            skos:prefLabel "Windturbine";
+            skos:definition "Moderne hoge windmolen waarin winddruk wordt omgezet in mechanische energie."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Zendermast rdf:type skos:Concept;
+            rdfs:label "Zendermast";
+            skos:prefLabel "Zendermast";
+            skos:definition "Een hoge constructie die wordt gebruikt voor het bevestigen van antennes voor telecommunicatie."@nl;
+            skos:broader sor_begrip:Mast;
+            skos_thes:broaderGeneric sor_begrip:Mast;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Afvalbak rdf:type skos:Concept;
+            rdfs:label "Afvalbak"@nl;
+            skos:prefLabel "Afvalbak"@nl;
+            skos:definition "Bak of korf in de openbare ruimte met een permanent karakter; bedoeld voor het verzamelen van (meestal los) afval. "@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Bloembak rdf:type skos:Concept;
+            rdfs:label "Bloembak"@nl;
+            skos:prefLabel "Bloembak"@nl;
+            skos:definition "Bak in de openbare ruimte met een permanent karakter, waarin planten of struiken zijn geplant."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:ZandZoutbak rdf:type skos:Concept;
+            rdfs:label "Zand-/zoutbak"@nl;
+            skos:prefLabel "Zand-/zoutbak"@nl;
+            skos:definition "Een bak met strooisel ten behoeve van gladheidsbestrijding."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Poller rdf:type skos:Concept;
+            rdfs:label "Poller"@nl;
+            skos:prefLabel "Poller"@nl;
+            skos:definition "Een inzinkbare paal die door een elektrische of hydraulische aandrijving uit een wegdek omhoog wordt gestuurd en die dient om het autoverkeer te reguleren."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Abri rdf:type skos:Concept;
+            rdfs:label "Abri"@nl;
+            skos:prefLabel "Abri"@nl;
+            skos:definition "Overdekte wachtplaats voor passagiers van het openbaar vervoer. "@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Brievenbus rdf:type skos:Concept;
+            rdfs:label "Brievenbus"@nl;
+            skos:prefLabel "Brievenbus"@nl;
+            skos:definition "Uitpandige kast waar post in kan worden gedeponeerd ter bezorging."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Fietsenrek rdf:type skos:Concept;
+            rdfs:label "Fietsenrek"@nl;
+            skos:prefLabel "Fietsenrek"@nl;
+            skos:definition "Een duurzaam verankerd rek in de openbare ruimte voor het stallen van (brom)fietsen."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Kunstobject rdf:type skos:Concept;
+            rdfs:label "Kunstobject"@nl;
+            skos:prefLabel "Kunstobject"@nl;
+            skos:definition "Een object dat als kunst gezien wordt en een bepaalde schoonheid heeft, niet door de natuur gemaakt."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:OpenbaarToilet rdf:type skos:Concept;
+            rdfs:label "Openbaar toilet"@nl;
+            skos:prefLabel "Openbaar toilet"@nl;
+            skos:definition "Voor mensen bedoeld toilet niet zijnde een pand, langs de openbare weg."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Slagboom rdf:type skos:Concept;
+            rdfs:label "Slagboom"@nl;
+            skos:prefLabel "Slagboom"@nl;
+            skos:definition "Boom of balk om de weg of een gedeelte hiervan af te sluiten. "@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Speelvoorziening rdf:type skos:Concept;
+            rdfs:label "Speelvoorziening"@nl;
+            skos:prefLabel "Speelvoorziening"@nl;
+            skos:definition "Aard en nagelvast met de grond verbonden constructie in de openbare ruimte, bedoeld als speelmateriaal voor kinderen."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Telefooncel rdf:type skos:Concept;
+            rdfs:label "Telefooncel"@nl;
+            skos:prefLabel "Telefooncel"@nl;
+            skos:definition "Niet-inpandige ruimte in openbaar gebied louter bestemd voor telefoneren."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Bank rdf:type skos:Concept;
+            rdfs:label "Bank"@nl;
+            skos:prefLabel "Bank"@nl;
+            skos:definition "Aaneengesloten zitplaats voor verscheidene personen, bedoeld voor openbaar gebruik en geplaatst in de openbare ruimte (vnl. in parken, plantsoenen, bossen en langs wegen)."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Picknicktafel rdf:type skos:Concept;
+            rdfs:label "Picknicktafel"@nl;
+            skos:prefLabel "Picknicktafel"@nl;
+            skos:definition "Een tafel met vaak daaraan gemonteerde zitbanken of stoelen die kan gebruikt worden om te picknicken. "@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Fontein rdf:type skos:Concept;
+            rdfs:label "Fontein"@nl;
+            skos:prefLabel "Fontein"@nl;
+            skos:definition "Een fontein is een natuurlijke of kunstmatige installatie die water spuit."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Lichtpunt rdf:type skos:Concept;
+            rdfs:label "Lichtpunt"@nl;
+            skos:prefLabel "Lichtpunt"@nl;
+            skos:definition "Een lichtpunt is een voorziening die licht uitzendt niet verbonden met een mast die het maaiveld raakt."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Parkeerbeugel rdf:type skos:Concept;
+            rdfs:label "Parkeerbeugel"@nl;
+            skos:prefLabel "Parkeerbeugel"@nl;
+            skos:definition "Een omklapbare beugel voor het afschermen van een parkeerplaats."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Betaalautomaat rdf:type skos:Concept;
+            rdfs:label "Betaalautomaat"@nl;
+            skos:prefLabel "Betaalautomaat"@nl;
+            skos:definition "Een apparaat dat betaalkaarten en/of contant geld accepteert om betalingen uit te voeren."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Fietsenkluis rdf:type skos:Concept;
+            rdfs:label "Fietsenkluis"@nl;
+            skos:prefLabel "Fietsenkluis"@nl;
+            skos:definition "Een kluis om een fiets in te bewaren, meestal ter voorkoming van diefstal of beschadiging."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Herdenkingsmonument rdf:type skos:Concept;
+            rdfs:label "Herdenkingsmonument"@nl;
+            skos:prefLabel "Herdenkingsmonument"@nl;
+            skos:definition "In het terrein aangelegd object ter herdenking van personen of evenementen."@nl;
+            skos:broader sor_begrip:Straatmeubilair;
+            skos_thes:broaderGeneric sor_begrip:Straatmeubilair;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+
+sor_begrip:Hoogtedetectieapparaat rdf:type skos:Concept;
+            rdfs:label "Hoogtedetectieapparaat"@nl;
+            skos:prefLabel "Hoogtedetectieapparaat"@nl;
+            skos:definition "Een mechanisch of elektronisch waarschuwingssysteem, dat in werking treedt bij overschrijding van de aangegeven maximale doorrijhoogte."@nl;
+            skos:broader sor_begrip:Sensor;
+            skos_thes:broaderGeneric sor_begrip:Sensor;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:GMSSensor rdf:type skos:Concept;
+            rdfs:label "GMS sensor"@nl;
+            skos:prefLabel "GMS sensor"@nl;
+            skos:definition "Gladheidsmeldsysteem (GMS) waarmee de kans op gladheid wordt voorspeld aan de hand van meting en interpretatie van de parameters die een rol spelen bij het ontstaan van gladheid."@nl;
+            skos:broader sor_begrip:Sensor;
+            skos_thes:broaderGeneric sor_begrip:Sensor;
+            skos:inScheme begrippenkaders:sor .
+
+sor_begrip:Informatiebord rdf:type skos:Concept;
+            rdfs:label "Informatiebord"@nl;
+            skos:prefLabel "Informatiebord"@nl;
+            skos:definition "Een bord met daarop specifieke actuele informatie, zoals plattegronden of vertrektijden."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Plaatsnaambord rdf:type skos:Concept;
+            rdfs:label "Plaatsnaambord"@nl;
+            skos:prefLabel "Plaatsnaambord"@nl;
+            skos:definition "Een bord waarop een naam van een (woon)plaats of locatie is vermeld"@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Straatnaambord rdf:type skos:Concept;
+            rdfs:label "Straatnaambord"@nl;
+            skos:prefLabel "Straatnaambord"@nl;
+            skos:definition "Bord waarop de door de gemeente vastgestelde naam van de straat is vermeld. Bord kan zich op een paal of aan de gevel bevinden"@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Verkeersbord rdf:type skos:Concept;
+            rdfs:label "Verkeersbord"@nl;
+            skos:prefLabel "Verkeersbord"@nl;
+            skos:definition "Bord waarop een verkeersteken is aangebracht en waarvan de uitvoering wettelijk is voorgeschreven volgens het ‘Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)’."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Scheepvaartbord rdf:type skos:Concept;
+            rdfs:label "Scheepvaartbord"@nl;
+            skos:prefLabel "Scheepvaartbord"@nl;
+            skos:definition "Bord waarop een scheepvaartteken is aangebracht en waarvan de uitvoering als richtlijn is voorgeschreven volgens ‘Richtlijnen Scheepvaarttekens (RST 2008)’."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:VerklikkerTransportleiding rdf:type skos:Concept;
+            rdfs:label "Verklikker transportleiding"@nl;
+            skos:prefLabel "Verklikker transportleiding"@nl;
+            skos:definition "Bovengrondse voorziening om een ondergrondse transportleiding te markeren."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Reclamebord rdf:type skos:Concept;
+            rdfs:label "Reclamebord"@nl;
+            skos:prefLabel "Reclamebord"@nl;
+            skos:definition "Vrijstaand bord/zuil waarop rondom of aan één of meer zijden affiches kun worden (of zijn) geplakt."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Wegwijzer rdf:type skos:Concept;
+            rdfs:label "Wegwijzer"@nl;
+            skos:prefLabel "Wegwijzer"@nl;
+            skos:definition "Constructie voorzien van een meer panelen met informatie ten behoeve van de bewegwijzering."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:DynamischeSnelheidsindicator rdf:type skos:Concept;
+            rdfs:label "Dynamische snelheidsindicator"@nl;
+            skos:prefLabel "Dynamische snelheidsindicator"@nl;
+            skos:definition "Een snelheidsinformatiebord dat in “real time” de snelheid van de weggebruikers aanduidt."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Zonnepaneel rdf:type skos:Concept;
+            rdfs:label "Zonnepaneel"@nl;
+            skos:prefLabel "Zonnepaneel"@nl;
+            skos:definition "Een zonnepaneel is een paneel dat zonne-energie omzet in elektriciteit."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Lichtmast rdf:type skos:Concept;
+            rdfs:label "Lichtmast"@nl;
+            skos:prefLabel "Lichtmast"@nl;
+            skos:definition "Mast bestemd voor het dragen van een of meer verlichtingsarmaturen."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Telpaal rdf:type skos:Concept;
+            rdfs:label "Telpaal"@nl;
+            skos:prefLabel "Telpaal"@nl;
+            skos:definition "Paal waaraan de verkeerstelle is bevestigd."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Portaal rdf:type skos:Concept;
+            rdfs:label "Portaal"@nl;
+            skos:prefLabel "Portaal"@nl;
+            skos:definition "Geheel van twee of meer ondersteuningsconstructies die door een ligger zijn verbonden, bedoelt voor het aanbrengen van verkeersaanduidingen."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Verkeersregelinstallatiepaal rdf:type skos:Concept;
+            rdfs:label "Verkeersregelinstallatiepaal"@nl;
+            skos:prefLabel "Verkeersregelinstallatiepaal"@nl;
+            skos:definition "Paal met daaraan bevestigd de verkeersregelinstallatie."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Verkeersbordpaal rdf:type skos:Concept;
+            rdfs:label "Verkeersbordpaal"@nl;
+            skos:prefLabel "Verkeersbordpaal"@nl;
+            skos:definition "Paal waaraan een of meerdere verkeersborden zijn bevestigd."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Haltepaal rdf:type skos:Concept;
+            rdfs:label "Haltepaal"@nl;
+            skos:prefLabel "Haltepaal"@nl;
+            skos:definition "Paal met daarop de dienstregeling ten behoeve van het openbaar vervoer."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Vlaggenmast rdf:type skos:Concept;
+            rdfs:label "Vlaggenmast"@nl;
+            skos:prefLabel "Vlaggenmast"@nl;
+            skos:definition "Paal bedoeld om vlaggen aan te hangen."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Afsluitpaal rdf:type skos:Concept;
+            rdfs:label "Afsluitpaal"@nl;
+            skos:prefLabel "Afsluitpaal"@nl;
+            skos:definition "Al dan niet verwijderbare paal in de grond om de weg of een gedeelte hiervan af te sluiten."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Praatpaal rdf:type skos:Concept;
+            rdfs:label "Praatpaal"@nl;
+            skos:prefLabel "Praatpaal"@nl;
+            skos:definition "Stalen of kunststof paal langs verkeerswegen welke bedoeld is telefonisch contact te leggen met een centrale meldkamer (ANWB)."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Hectometerpaal rdf:type skos:Concept;
+            rdfs:label "Hectometerpaal"@nl;
+            skos:prefLabel "Hectometerpaal"@nl;
+            skos:definition "Paaltje of bordje geplaatst langs de weg, waarop een hectometerwaarde (weg) of kilometrering (vaarweg) is vermeld eventueel gevolgd door een letter."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Dijkpaal rdf:type skos:Concept;
+            rdfs:label "Dijkpaal"@nl;
+            skos:prefLabel "Dijkpaal"@nl;
+            skos:definition "Een markant punt op de waterkering of op het strand dat dient als referentiepunt voor afstandsaanduidingen."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Drukknoppaal rdf:type skos:Concept;
+            rdfs:label "Drukknoppaal"@nl;
+            skos:prefLabel "Drukknoppaal"@nl;
+            skos:definition "Paal met een lengte van ongeveer 1 m, met een drukknop waarmee de verkeersdeelnemer zich meldt bij een verkeersregelinstallatie."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Grensmarkering rdf:type skos:Concept;
+            rdfs:label "Grensmarkering"@nl;
+            skos:prefLabel "Grensmarkering"@nl;
+            skos:definition "Paal ter afbakening van een grens."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Camera rdf:type skos:Concept;
+            rdfs:label "Camera"@nl;
+            skos:prefLabel "Camera"@nl;
+            skos:definition "Installatie voor de registratie van beelden van situaties, waarvan directe observatie moeilijk of niet permanent mogelijk is."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Debietmeter rdf:type skos:Concept;
+            rdfs:label "Debietmeter"@nl;
+            skos:prefLabel "Debietmeter"@nl;
+            skos:definition "Een instrument dat de (afvoer)capaciteit van de volumestroom meet."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Weerstation rdf:type skos:Concept;
+            rdfs:label "Weerstation"@nl;
+            skos:prefLabel "Weerstation"@nl;
+            skos:definition "Een weerstation is een verzameling instrumenten die het weer kunnen meten."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Flitser rdf:type skos:Concept;
+            rdfs:label "Flitser"@nl;
+            skos:prefLabel "Flitser"@nl;
+            skos:definition "Een flitser bevat een mechanisme om een snelheidsmeting uit te voeren om snelheidsovertredingen in het verkeer te kunnen vaststellen."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Waterstandmeter rdf:type skos:Concept;
+            rdfs:label "Waterstandmeter"@nl;
+            skos:prefLabel "Waterstandmeter"@nl;
+            skos:definition "Een meter die de waterstand, over het algemeen ten opzichte van NAP, meet."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Windmeter rdf:type skos:Concept;
+            rdfs:label "Windmeter"@nl;
+            skos:prefLabel "Windmeter"@nl;
+            skos:definition "Apparatuur waarmee de snelheid en de richting van de wind kan worden gemeten."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Lichtcel rdf:type skos:Concept;
+            rdfs:label "Lichtcel"@nl;
+            skos:prefLabel "Lichtcel"@nl;
+            skos:definition "Lichtcel waarmee het verlichtingsniveau naar een lager verlichtingsniveau omgeschakeld wordt (dimmen) wanneer de situatie dit toelaat."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:RadarDetector rdf:type skos:Concept;
+            rdfs:label "Radar detector"@nl;
+            skos:prefLabel "Radar detector"@nl;
+            skos:definition "Met een radardetector wordt het verkeer gedetecteerd, bijvoorbeeld voor het beïnvloeden van verkeerslichten."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Bolder rdf:type skos:Concept;
+            rdfs:label "Bolder"@nl;
+            skos:prefLabel "Bolder"@nl;
+            skos:definition "Een inrichting aan de wal, waar een schip, door middel van een tros of landvast, aan vastgelegd kan worden."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Reclamezuil rdf:type skos:Concept;
+            rdfs:label "Reclamezuil"@nl;
+            skos:prefLabel "Reclamezuil"@nl;
+            skos:definition "Vrijstaand bord/zuil waarop rondom of aan één of meer zijden affiches kunnen worden (of zijn) geplakt."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Betonning rdf:type skos:Concept;
+            rdfs:label "Betonning"@nl;
+            skos:prefLabel "Betonning"@nl;
+            skos:definition "Een systeem van boeien en bakens, waarmee in open zee of in een vaarwater ondiepten of de aanwezigheid van gevaarlijke objecten worden aangegeven."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Meerpaal rdf:type skos:Concept;
+            rdfs:label "Meerpaal"@nl;
+            skos:prefLabel "Meerpaal"@nl;
+            skos:definition "Paal voor een kade of in een haven waaraan een schip kan worden afgemeerd."@nl;
+            skos:broader sor_begrip:Paal;
+            skos_thes:broaderGeneric sor_begrip:Paal;
+            skos:inScheme begrippenkaders:sor ;
+            .
+
+sor_begrip:LageTrafo rdf:type skos:Concept;
+            rdfs:label "Lage trafo"@nl;
+            skos:prefLabel "Lage trafo"@nl;
+            skos:definition "Bouwwerk waarin transformator(en) zijn geplaatst voor elektriciteitsvoorziening."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:CAIkast rdf:type skos:Concept;
+            rdfs:label "Cai-kast"@nl;
+            skos:prefLabel "Cai-kast"@nl;
+            skos:definition "Kast ten behoeve van de regeling van radio- en televisiesignalen"@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Elektrakast rdf:type skos:Concept;
+            rdfs:label "Elektrakast"@nl;
+            skos:prefLabel "Elektrakast"@nl;
+            skos:definition "Kast ten behoeve van het transport van elektriciteit."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Gaskast rdf:type skos:Concept;
+            rdfs:label "Gaskast"@nl;
+            skos:prefLabel "Gaskast"@nl;
+            skos:definition "Kast ten behoeve van het transport van gas."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Telecomkast rdf:type skos:Concept;
+            rdfs:label "Telecom kast"@nl;
+            skos:prefLabel "Telecom kast"@nl;
+            skos:definition "Kast ten behoeve van de regeling van telecommunicatie."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Rioolkast rdf:type skos:Concept;
+            rdfs:label "Rioolkast"@nl;
+            skos:prefLabel "Rioolkast"@nl;
+            skos:definition "Kast ten behoeve van de regeling van het transport van rioolwater."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:OpenbareVerlichtingkast rdf:type skos:Concept;
+            rdfs:label "Openbare verlichtingkast"@nl;
+            skos:prefLabel "Openbare verlichtingkast"@nl;
+            skos:definition "Kast ten behoeve van de regeling van de openbare verlichting."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Verkeersregelinstallatiekast rdf:type skos:Concept;
+            rdfs:label "Verkeersregelinstallatiekast"@nl;
+            skos:prefLabel "Verkeersregelinstallatiekast"@nl;
+            skos:definition "Kast ten behoeve van de regeling van het verkeer."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:Telkast rdf:type skos:Concept;
+            rdfs:label "Telkast"@nl;
+            skos:prefLabel "Telkast"@nl;
+            skos:definition "Kast ten behoeve van het meten van permanente verkeertellingen."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            . 
+sor_begrip:GMSKast rdf:type skos:Concept;
+            rdfs:label "GMS kast"@nl;
+            skos:prefLabel "GMS kast"@nl;
+            skos:definition "Kast ten behoeve van het meten van weers- en wegdekomstandigheden."@nl;
+            skos:broader sor_begrip:Kast;
+            skos_thes:broaderGeneric sor_begrip:Kast;
+            skos:inScheme begrippenkaders:sor ;
+            .                                      
