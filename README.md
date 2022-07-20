@@ -1,4 +1,7 @@
 # DisGeo begrippenkader
+
+**NB OUD, wordt niet meer gebruikt**
+
 Dit is de repository voor het ontwikkelen van het DisGeo begrippenkader. 
 
 De werkversie van het begrippenkader is hier in documentvorm te bekijken: 
